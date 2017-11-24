@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Getting Started with Entando &#8212; progetto 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="progetto 1.0 documentation" href="index.html" />
+    <link rel="prev" title="Welcome to the Entando core project wiki" href="entando_core.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started-with-entando">
+<h1>Getting Started with Entando<a class="headerlink" href="#getting-started-with-entando" title="Permalink to this headline">¶</a></h1>
+<p>Here what you need to start using Entando:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Java JDK version &gt;= 7</li>
+<li>Ensure which JDK&#8217;s version you are using, running the following command at the command prompt:</li>
+</ul>
+<blockquote>
+<div>java -version</div></blockquote>
+<ul class="simple">
+<li>Maven version &gt;= 2.2.1 (It&#8217;s recommended to use Maven up to version v3.0.5)</li>
+</ul>
+</div></blockquote>
+<p>And this if you are going to develop:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Ant</li>
+</ul>
+</div></blockquote>
+<p>With the JDK, Maven and Ant installed you are ready to go. Some detail on how to achieve that below.</p>
+<p>Check your Installation</p>
+<blockquote>
+<div><blockquote>
+<div>Create an empty directory and generate a test web application, based on the Entando bootstrap archetype, typing bogus data when asked:</div></blockquote>
+<p><strong>$ mvn archetype:generate -Dfilter=entando-archetype-portal-bootstrap</strong></p>
+</div></blockquote>
+<p>Note: Every Maven project has its groupId: this is generally unique amongst an organization or a project; artifactId: this is generally the name that the project is known by; version: this is the version of the project. Maven will ask these to you in three steps. Finally, Maven will ask you the package structure for your code.</p>
+<blockquote>
+<div><blockquote>
+<div>Enter the newly created folder
+Launch Jetty:</div></blockquote>
+<p><strong>$ mvn clean jetty:run</strong></p>
+<blockquote>
+<div>Open your browser at <a class="reference external" href="http://localhost:8080/">http://localhost:8080/</a> (ignore the 404 error)
+Click on the link you will find on that page</div></blockquote>
+</div></blockquote>
+<div class="section" id="setup-environment-with-os-x-10-9-or-newer">
+<h2>Setup Environment with OS X 10.9 or newer<a class="headerlink" href="#setup-environment-with-os-x-10-9-or-newer" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><blockquote>
+<div><p>Download the Java JDK 7 from the oracle website and install the provided package.</p>
+<p>Set the JAVA_HOME environment variable:</p>
+</div></blockquote>
+<p><strong>$ echo &#8220;export JAVA_HOME=`/usr/libexec/java_home`&#8221; | tee -a ~/.bash_profile</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Install XCode from the App Store</li>
+<li>Install Homebrew</li>
+<li>Run brew doctor and fix any warning you get from it</li>
+<li>Install Maven and Ant:</li>
+</ul>
+</div></blockquote>
+<p><strong>$ brew install maven</strong>
+<strong>$ brew install ant</strong></p>
+</div></blockquote>
+</div>
+<div class="section" id="setup-environment-with-ubuntu">
+<h2>Setup Environment with Ubuntu<a class="headerlink" href="#setup-environment-with-ubuntu" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><blockquote>
+<div>Install Maven and Ant:</div></blockquote>
+<p><strong>$ sudo apt-get install maven ant</strong></p>
+<blockquote>
+<div>Set the JAVA_HOME environment variable:</div></blockquote>
+<p><strong>$ echo &#8220;JAVA_HOME=&#8221;/usr/lib/jvm/default-java&#8221;&#8221; | sudo tee -a /etc/environment</strong></p>
+<blockquote>
+<div>Reboot</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="setup-environment-with-windows">
+<h2>Setup Environment with Windows<a class="headerlink" href="#setup-environment-with-windows" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>Install Java JDK 7</dt>
+<dd><blockquote class="first">
+<div>Download and install the .exe installer</div></blockquote>
+<p>jdk-7u79-windows-x64</p>
+<blockquote class="last">
+<div>Create the environment variable</div></blockquote>
+</dd>
+</dl>
+<p>JAVA_HOME -&gt; C:Program FilesJavajdk1.7.0_79</p>
+<p>Install Maven</p>
+<blockquote>
+<div><p>apache-maven-3.3.3-bin</p>
+<blockquote>
+<div>Set the Maven environment variable</div></blockquote>
+</div></blockquote>
+<p>MVN_HOME -&gt; D:programmiInstallatiapache-maven-3.3.3</p>
+<p>Install Ant</p>
+<p>apache-ant-1.9.6-bin</p>
+<blockquote>
+<div><p>Set the Maven environment variable</p>
+<p>ANT_HOME -&gt;  path:  D:programmiInstallatiapache-ant-1.9.6</p>
+</div></blockquote>
+<p>Update the environment variable &#8220;PATH&#8221; in order to execute the programs by shell:</p>
+<p>Example:</p>
+<p>D:programmiInstallatiapache-Maven-3.3.3bin;%JAVA_HOME%bin;%ANT_HOME%bin;%SYSTEMROOT%;%SYSTEMROOT%System32;</p>
+</div></blockquote>
+</div>
+<div class="section" id="production-server">
+<h2>Production Server<a class="headerlink" href="#production-server" title="Permalink to this headline">¶</a></h2>
+<p>If you need to configure a server follow the guide on How to Setup a Production Environment</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Getting Started with Entando</a><ul>
+<li><a class="reference internal" href="#setup-environment-with-os-x-10-9-or-newer">Setup Environment with OS X 10.9 or newer</a></li>
+<li><a class="reference internal" href="#setup-environment-with-ubuntu">Setup Environment with Ubuntu</a></li>
+<li><a class="reference internal" href="#setup-environment-with-windows">Setup Environment with Windows</a></li>
+<li><a class="reference internal" href="#production-server">Production Server</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="entando_core.html" title="previous chapter">Welcome to the Entando core project wiki</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/getting_started.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, simone.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/getting_started.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
