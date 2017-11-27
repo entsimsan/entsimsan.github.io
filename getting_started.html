@@ -6,9 +6,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Getting Started with Entando &#8212; progetto 1.0 documentation</title>
+    <title>Getting Started &#8212; Entando Documentation 1.0 documentation</title>
     
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -25,126 +25,160 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="top" title="progetto 1.0 documentation" href="index.html" />
-    <link rel="prev" title="Welcome to the Entando core project wiki" href="entando_core.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
+    <link rel="top" title="Entando Documentation 1.0 documentation" href="index.html" />
+    <link rel="next" title="Build from Source Code" href="build_from_source.html" />
+    <link rel="prev" title="Welcome to the Entando core project wiki" href="home.html" /> 
   </head>
   <body role="document">
-  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="build_from_source.html" title="Build from Source Code"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="home.html" title="Welcome to the Entando core project wiki"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Entando Documentation 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="getting-started-with-entando">
-<h1>Getting Started with Entando<a class="headerlink" href="#getting-started-with-entando" title="Permalink to this headline">¶</a></h1>
-<p>Here what you need to start using Entando:</p>
-<blockquote>
-<div><ul class="simple">
-<li>Java JDK version &gt;= 7</li>
-<li>Ensure which JDK&#8217;s version you are using, running the following command at the command prompt:</li>
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">Here what you need to start using Entando:</p>
+<ul>
+<li><p class="first">[Java JDK version &gt;= 7](<a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>)</p>
+</li>
+<li><p class="first">Ensure which JDK&#8217;s version you are using, running the following command at the command prompt:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ java -version
+</pre></div>
+</div>
+</li>
 </ul>
-<blockquote>
-<div>java -version</div></blockquote>
-<ul class="simple">
-<li>Maven version &gt;= 2.2.1 (It&#8217;s recommended to use Maven up to version v3.0.5)</li>
+<ul class="simple" id="index-1">
+<li>[Maven version &gt;= 2.2.1](<a class="reference external" href="http://maven.apache.org/download.cgi">http://maven.apache.org/download.cgi</a>) (It&#8217;s recommended to use Maven up to version v3.0.5)</li>
 </ul>
-</div></blockquote>
 <p>And this if you are going to develop:</p>
-<blockquote>
-<div><ul class="simple">
-<li>Ant</li>
+<ul class="simple">
+<li>[Ant](<a class="reference external" href="http://ant.apache.org/bindownload.cgi">http://ant.apache.org/bindownload.cgi</a>)</li>
 </ul>
-</div></blockquote>
-<p>With the JDK, Maven and Ant installed you are ready to go. Some detail on how to achieve that below.</p>
-<p>Check your Installation</p>
-<blockquote>
-<div><blockquote>
-<div>Create an empty directory and generate a test web application, based on the Entando bootstrap archetype, typing bogus data when asked:</div></blockquote>
-<p><strong>$ mvn archetype:generate -Dfilter=entando-archetype-portal-bootstrap</strong></p>
-</div></blockquote>
-<p>Note: Every Maven project has its groupId: this is generally unique amongst an organization or a project; artifactId: this is generally the name that the project is known by; version: this is the version of the project. Maven will ask these to you in three steps. Finally, Maven will ask you the package structure for your code.</p>
-<blockquote>
-<div><blockquote>
-<div>Enter the newly created folder
-Launch Jetty:</div></blockquote>
-<p><strong>$ mvn clean jetty:run</strong></p>
-<blockquote>
-<div>Open your browser at <a class="reference external" href="http://localhost:8080/">http://localhost:8080/</a> (ignore the 404 error)
-Click on the link you will find on that page</div></blockquote>
-</div></blockquote>
+<p>With the JDK, Maven and Ant installed you are ready to go.
+Some detail on how to achieve that below.</p>
+<p><strong>Check your Installation</strong></p>
+<ul>
+<li><p class="first">Create an empty directory and generate a test web application, based on the Entando bootstrap archetype, typing bogus data when asked:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ mvn archetype:generate -Dfilter=entando-archetype-portal-bootstrap
+</pre></div>
+</div>
+</li>
+</ul>
+<p><strong>Note</strong>: Every Maven project has its _groupId_: this is generally unique amongst an organization or a project; _artifactId_: this is generally the name that the project is known by; _version_: this is the version of the project. Maven will ask these to you in three steps. Finally, Maven will ask you the package structure for your code.</p>
+<ul id="index-2">
+<li><p class="first">Enter the newly created folder</p>
+</li>
+<li><p class="first">Launch Jetty:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ mvn clean jetty:run
+</pre></div>
+</div>
+</li>
+<li><p class="first">Open your browser at [<a class="reference external" href="http://localhost:8080/](http://localhost:8080/">http://localhost:8080/](http://localhost:8080/</a>) (ignore the _404_ error)</p>
+</li>
+<li><p class="first">Click on the link you will find on that page</p>
+</li>
+</ul>
 <div class="section" id="setup-environment-with-os-x-10-9-or-newer">
 <h2>Setup Environment with OS X 10.9 or newer<a class="headerlink" href="#setup-environment-with-os-x-10-9-or-newer" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><blockquote>
-<div><p>Download the Java JDK 7 from the oracle website and install the provided package.</p>
-<p>Set the JAVA_HOME environment variable:</p>
-</div></blockquote>
-<p><strong>$ echo &#8220;export JAVA_HOME=`/usr/libexec/java_home`&#8221; | tee -a ~/.bash_profile</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li>Install XCode from the App Store</li>
-<li>Install Homebrew</li>
-<li>Run brew doctor and fix any warning you get from it</li>
-<li>Install Maven and Ant:</li>
+<ul>
+<li><p class="first">Download the [Java JDK 7 from the oracle website](<a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>) and install the provided package.</p>
+</li>
+<li><p class="first">Set the <strong>*JAVA_HOME*</strong> environment variable:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ echo &quot;export JAVA_HOME=\`/usr/libexec/java_home\`&quot; | tee -a ~/.bash_profile
+</pre></div>
+</div>
+</li>
+<li><p class="first">Install XCode from the App Store</p>
+</li>
+<li><p class="first">Install [Homebrew](<a class="reference external" href="http://brew.sh/">http://brew.sh/</a>)</p>
+</li>
+<li><p class="first">Run brew doctor and fix any warning you get from it</p>
+</li>
+<li><p class="first">Install Maven and Ant:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ brew install maven
+$ brew install ant
+</pre></div>
+</div>
+</li>
 </ul>
-</div></blockquote>
-<p><strong>$ brew install maven</strong>
-<strong>$ brew install ant</strong></p>
-</div></blockquote>
 </div>
 <div class="section" id="setup-environment-with-ubuntu">
-<h2>Setup Environment with Ubuntu<a class="headerlink" href="#setup-environment-with-ubuntu" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><blockquote>
-<div>Install Maven and Ant:</div></blockquote>
-<p><strong>$ sudo apt-get install maven ant</strong></p>
-<blockquote>
-<div>Set the JAVA_HOME environment variable:</div></blockquote>
-<p><strong>$ echo &#8220;JAVA_HOME=&#8221;/usr/lib/jvm/default-java&#8221;&#8221; | sudo tee -a /etc/environment</strong></p>
-<blockquote>
-<div>Reboot</div></blockquote>
-</div></blockquote>
+<span id="index-3"></span><h2>Setup Environment with Ubuntu<a class="headerlink" href="#setup-environment-with-ubuntu" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Install Maven and Ant:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo apt-get install maven ant
+</pre></div>
+</div>
+</li>
+<li><p class="first">Set the <strong>JAVA_HOME</strong> environment variable:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ echo &quot;JAVA_HOME=\&quot;/usr/lib/jvm/default-java\&quot;&quot; | sudo tee -a /etc/environment
+</pre></div>
+</div>
+</li>
+<li><p class="first">Reboot</p>
+</li>
+</ul>
 </div>
 <div class="section" id="setup-environment-with-windows">
-<h2>Setup Environment with Windows<a class="headerlink" href="#setup-environment-with-windows" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><dl class="docutils">
-<dt>Install Java JDK 7</dt>
-<dd><blockquote class="first">
-<div>Download and install the .exe installer</div></blockquote>
-<p>jdk-7u79-windows-x64</p>
-<blockquote class="last">
-<div>Create the environment variable</div></blockquote>
-</dd>
-</dl>
-<p>JAVA_HOME -&gt; C:Program FilesJavajdk1.7.0_79</p>
-<p>Install Maven</p>
-<blockquote>
-<div><p>apache-maven-3.3.3-bin</p>
-<blockquote>
-<div>Set the Maven environment variable</div></blockquote>
-</div></blockquote>
-<p>MVN_HOME -&gt; D:programmiInstallatiapache-maven-3.3.3</p>
-<p>Install Ant</p>
-<p>apache-ant-1.9.6-bin</p>
-<blockquote>
-<div><p>Set the Maven environment variable</p>
-<p>ANT_HOME -&gt;  path:  D:programmiInstallatiapache-ant-1.9.6</p>
-</div></blockquote>
-<p>Update the environment variable &#8220;PATH&#8221; in order to execute the programs by shell:</p>
-<p>Example:</p>
-<p>D:programmiInstallatiapache-Maven-3.3.3bin;%JAVA_HOME%bin;%ANT_HOME%bin;%SYSTEMROOT%;%SYSTEMROOT%System32;</p>
-</div></blockquote>
+<span id="index-4"></span><h2>Setup Environment with Windows<a class="headerlink" href="#setup-environment-with-windows" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Install [Java JDK 7](<a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html</a>)</p>
+</li>
+<li><p class="first">Download and install the .exe installer:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">jdk</span><span class="o">-</span><span class="mi">7</span><span class="n">u79</span><span class="o">-</span><span class="n">windows</span><span class="o">-</span><span class="n">x64</span>
+</pre></div>
 </div>
-<div class="section" id="production-server">
-<h2>Production Server<a class="headerlink" href="#production-server" title="Permalink to this headline">¶</a></h2>
-<p>If you need to configure a server follow the guide on How to Setup a Production Environment</p>
+</li>
+<li><p class="first">Create the environment variable:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">JAVA_HOME</span> <span class="o">-&gt;</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Program</span> <span class="n">Files</span>\<span class="n">Java</span>\<span class="n">jdk1</span><span class="o">.</span><span class="mf">7.0</span><span class="n">_79</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Install [Maven](<a class="reference external" href="http://maven.apache.org/download.cgi">http://maven.apache.org/download.cgi</a>)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">apache</span><span class="o">-</span><span class="n">maven</span><span class="o">-</span><span class="mf">3.3</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="nb">bin</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Set the Maven environment variable:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">MVN_HOME</span> <span class="o">-&gt;</span> <span class="n">D</span><span class="p">:</span>\<span class="n">programmiInstallati</span>\<span class="n">apache</span><span class="o">-</span><span class="n">maven</span><span class="o">-</span><span class="mf">3.3</span><span class="o">.</span><span class="mi">3</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Install [Ant](<a class="reference external" href="http://ant.apache.org/bindownload.cgi">http://ant.apache.org/bindownload.cgi</a>)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">apache</span><span class="o">-</span><span class="n">ant</span><span class="o">-</span><span class="mf">1.9</span><span class="o">.</span><span class="mi">6</span><span class="o">-</span><span class="nb">bin</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Set the Maven environment variable</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ANT_HOME</span> <span class="o">-&gt;</span>  <span class="n">path</span><span class="p">:</span>  <span class="n">D</span><span class="p">:</span>\<span class="n">programmiInstallati</span>\<span class="n">apache</span><span class="o">-</span><span class="n">ant</span><span class="o">-</span><span class="mf">1.9</span><span class="o">.</span><span class="mi">6</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Update the environment variable <strong>PATH</strong> in order to execute the programs by shell:</p>
+<p>Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">D</span><span class="p">:</span>\<span class="n">programmiInstallati</span>\<span class="n">apache</span><span class="o">-</span><span class="n">Maven</span><span class="o">-</span><span class="mf">3.3</span><span class="o">.</span><span class="mi">3</span>\<span class="nb">bin</span><span class="p">;</span><span class="o">%</span><span class="n">JAVA_HOME</span><span class="o">%</span>\<span class="nb">bin</span><span class="p">;</span><span class="o">%</span><span class="n">ANT_HOME</span><span class="o">%</span>\<span class="nb">bin</span><span class="p">;</span><span class="o">%</span><span class="n">SYSTEMROOT</span><span class="o">%</span><span class="p">;</span><span class="o">%</span><span class="n">SYSTEMROOT</span><span class="o">%</span>\<span class="n">System32</span><span class="p">;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Production Server</p>
+<p>If you need to configure a server follow the guide on [How to Setup a Production Environment](./Server-Installation)</p>
 </div>
 </div>
 
@@ -156,22 +190,20 @@ Click on the link you will find on that page</div></blockquote>
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Getting Started with Entando</a><ul>
+<li><a class="reference internal" href="#">Getting Started</a><ul>
 <li><a class="reference internal" href="#setup-environment-with-os-x-10-9-or-newer">Setup Environment with OS X 10.9 or newer</a></li>
 <li><a class="reference internal" href="#setup-environment-with-ubuntu">Setup Environment with Ubuntu</a></li>
 <li><a class="reference internal" href="#setup-environment-with-windows">Setup Environment with Windows</a></li>
-<li><a class="reference internal" href="#production-server">Production Server</a></li>
 </ul>
 </li>
 </ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="entando_core.html" title="previous chapter">Welcome to the Entando core project wiki</a></li>
-  </ul></li>
-</ul>
-</div>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="home.html"
+                        title="previous chapter">Welcome to the Entando core project wiki</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="build_from_source.html"
+                        title="next chapter">Build from Source Code</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -193,20 +225,24 @@ Click on the link you will find on that page</div></blockquote>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2017, simone.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.9</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
-      
-      |
-      <a href="_sources/getting_started.txt"
-          rel="nofollow">Page source</a>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="build_from_source.html" title="Build from Source Code"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="home.html" title="Welcome to the Entando core project wiki"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Entando Documentation 1.0 documentation</a> &#187;</li> 
+      </ul>
     </div>
-
-    
-
-    
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Simone Sanna.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.9.
+    </div>
   </body>
 </html>

@@ -1,0 +1,65 @@
+######################
+Build from Source Code
+######################
+
+.. index:: build from source
+
+To download the latest source code:
+
+* Open your terminal 
+* Create an empty directory for your project::
+
+	mkdir ~/my_new_project
+
+* Move to a directory of your choosing::
+
+	cd ~/my_new_project
+
+.. index:: clone Entando
+  
+* *clone* in the following sequence **entando-core**, **entando-components**, **entando-archetypes**, **entando-ux-packages** projects::
+
+
+	git clone https://github.com/entando/entando-core
+	git clone https://github.com/entando/entando-components
+	git clone https://github.com/entando/entando-archetypes
+
+
+  if you want to join with ready samples of Entando based applications, you can use **entando-ux-packages**:: 
+
+	git clone https://github.com/entando/entando-ux-packages
+
+
+.. index:: entando-core, entando-components, entando-archetypes, maven
+
+* Install, in the following sequence, the **entando-core**, **entando-components**, **entando-archetypes** projects:: 
+	
+	cd entando-core
+	mvn clean install -DskipTests
+
+	cd entando-components 
+	mvn clean install -DskipTests
+
+
+	cd entando-archetypes 
+	mvn clean install -DskipTests
+
+.. index:: archetype, entando ux-packages, !Jetty
+
+* Create an empty directory and generate a test web application, for instance based on the Entando bootstrap archetype, and type bogus data when asked::
+	
+	$ mvn archetype:generate -Dfilter=entando-archetype-portal-bootstrap
+
+	
+ otherwise, if you want to use the ready applications samples, you can run **entando ux-packages**::
+
+	cd entando-ux-packages
+	cd portalexample
+	mvn clean jetty:run
+
+Finally:
+
+* Open your browser at [http://localhost:8080/](http://localhost:8080/) (ignore the _404_ error)
+* Click on the link you will find on that page
+
+**NOTE**: If you want to deepen how to use the Entando archetypes, visit the wiki of [entando-archetypes](https://github.com/entando/entando-archetypes) project.
