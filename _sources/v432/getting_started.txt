@@ -1,0 +1,126 @@
+#############################
+Getting Started Version 4.3.2
+#############################
+
+.. index:: JDK, Java version
+
+Here what you need to start using Entando:
+
+* [Java JDK version >= 7](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+
+
+* Ensure which JDK's version you are using, running the following command at the command prompt::
+
+	$ java -version
+
+.. index:: Maven version
+
+* [Maven version >= 2.2.1](http://maven.apache.org/download.cgi) (It's recommended to use Maven up to version v3.0.5)
+
+And this if you are going to develop:
+
+* [Ant](http://ant.apache.org/bindownload.cgi)
+
+With the JDK, Maven and Ant installed you are ready to go.
+Some detail on how to achieve that below.
+
+
+**Check your Installation**
+
+* Create an empty directory and generate a test web application, based on the Entando bootstrap archetype, typing bogus data when asked::
+
+	$ mvn archetype:generate -Dfilter=entando-archetype-portal-bootstrap
+
+**Note**: Every Maven project has its _groupId_: this is generally unique amongst an organization or a project; _artifactId_: this is generally the name that the project is known by; _version_: this is the version of the project. Maven will ask these to you in three steps. Finally, Maven will ask you the package structure for your code.
+
+.. index:: Jetty
+
+* Enter the newly created folder
+* Launch Jetty::
+ 
+	$ mvn clean jetty:run
+
+* Open your browser at [http://localhost:8080/](http://localhost:8080/) (ignore the _404_ error)
+* Click on the link you will find on that page
+
+
+Setup Environment with OS X 10.9 or newer
+*****************************************
+
+* Download the [Java JDK 7 from the oracle website](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and install the provided package.
+
+* Set the ***JAVA_HOME*** environment variable::
+
+	$ echo "export JAVA_HOME=\`/usr/libexec/java_home\`" | tee -a ~/.bash_profile
+
+* Install XCode from the App Store
+* Install [Homebrew](http://brew.sh/)
+* Run brew doctor and fix any warning you get from it
+* Install Maven and Ant::
+
+	$ brew install maven
+	$ brew install ant
+
+
+.. index:: Setup Ubuntu, Setup Linux
+
+Setup Environment with Ubuntu
+*****************************
+
+* Install Maven and Ant::
+
+	$ sudo apt-get install maven ant
+
+* Set the **JAVA_HOME** environment variable::
+
+	$ echo "JAVA_HOME=\"/usr/lib/jvm/default-java\"" | sudo tee -a /etc/environment
+
+* Reboot
+
+
+.. index:: Setup Windows
+
+Setup Environment with Windows
+******************************
+
+* Install [Java JDK 7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
+  
+* Download and install the .exe installer::
+
+	jdk-7u79-windows-x64
+
+* Create the environment variable:: 
+
+	JAVA_HOME -> C:\Program Files\Java\jdk1.7.0_79
+
+
+* Install [Maven](http://maven.apache.org/download.cgi) ::
+
+	apache-maven-3.3.3-bin
+
+* Set the Maven environment variable::
+
+	MVN_HOME -> D:\programmiInstallati\apache-maven-3.3.3 
+
+
+* Install [Ant](http://ant.apache.org/bindownload.cgi) :: 
+
+	apache-ant-1.9.6-bin
+
+
+* Set the Maven environment variable	:: 
+
+	ANT_HOME ->  path:  D:\programmiInstallati\apache-ant-1.9.6
+
+
+* Update the environment variable **PATH** in order to execute the programs by shell:
+
+  Example:: 
+
+	D:\programmiInstallati\apache-Maven-3.3.3\bin;%JAVA_HOME%\bin;%ANT_HOME%\bin;%SYSTEMROOT%;%SYSTEMROOT%\System32;
+
+	
+
+Production Server
+
+If you need to configure a server follow the guide on [How to Setup a Production Environment](./Server-Installation)
