@@ -27,7 +27,7 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="top" title="Entando Documentation 1.0 documentation" href="../index.html" />
     <link rel="up" title="Entando documentation Version 4.3.1!" href="index.html" />
-    <link rel="next" title="Welcome to the Entando core project wiki Version 4.3.1" href="entando_core.html" />
+    <link rel="next" title="Entando documentation Version 4.3.2!" href="../v432/index.html" />
     <link rel="prev" title="Getting Started Version 4.3.1" href="getting_started.html" /> 
   </head>
   <body role="document">
@@ -38,7 +38,7 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="entando_core.html" title="Welcome to the Entando core project wiki Version 4.3.1"
+          <a href="../v432/index.html" title="Entando documentation Version 4.3.2!"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="getting_started.html" title="Getting Started Version 4.3.1"
@@ -57,22 +57,16 @@
   <div class="section" id="build-from-source-code-version-4-3-1">
 <h1>Build from Source Code Version 4.3.1<a class="headerlink" href="#build-from-source-code-version-4-3-1" title="Permalink to this headline">¶</a></h1>
 <p id="index-0">To download the latest source code:</p>
-<ul>
-<li><p class="first">Open your terminal</p>
-</li>
-<li><p class="first">Create an empty directory for your project:</p>
+<p>Open your terminal
+Create an empty directory for your project:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="o">~/</span><span class="n">my_new_project</span>
 </pre></div>
 </div>
-</li>
-<li><p class="first">Move to a directory of your choosing:</p>
+<p>Move to a directory of your choice:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">my_new_project</span>
 </pre></div>
 </div>
-</li>
-</ul>
-<ul id="index-1">
-<li><p class="first"><em>clone</em> in the following sequence <strong>entando-core</strong>, <strong>entando-components</strong>, <strong>entando-archetypes</strong>, <strong>entando-ux-packages</strong> projects:</p>
+<p id="index-1"><em>clone</em> in the following sequence <strong>entando-core</strong>, <strong>entando-components</strong>, <strong>entando-archetypes</strong>, <strong>entando-ux-packages</strong> projects:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">entando</span><span class="o">/</span><span class="n">entando</span><span class="o">-</span><span class="n">core</span>
 <span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">entando</span><span class="o">/</span><span class="n">entando</span><span class="o">-</span><span class="n">components</span>
 <span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">entando</span><span class="o">/</span><span class="n">entando</span><span class="o">-</span><span class="n">archetypes</span>
@@ -82,43 +76,30 @@
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">entando</span><span class="o">/</span><span class="n">entando</span><span class="o">-</span><span class="n">ux</span><span class="o">-</span><span class="n">packages</span>
 </pre></div>
 </div>
-</li>
-</ul>
-<ul id="index-2">
-<li><p class="first">Install, in the following sequence, the <strong>entando-core</strong>, <strong>entando-components</strong>, <strong>entando-archetypes</strong> projects:</p>
+<p id="index-2">Install, in the following sequence, the <strong>entando-core</strong>, <strong>entando-components</strong>, <strong>entando-archetypes</strong> projects:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">entando</span><span class="o">-</span><span class="n">core</span>
 <span class="n">mvn</span> <span class="n">clean</span> <span class="n">install</span> <span class="o">-</span><span class="n">DskipTests</span>
 
 <span class="n">cd</span> <span class="n">entando</span><span class="o">-</span><span class="n">components</span>
 <span class="n">mvn</span> <span class="n">clean</span> <span class="n">install</span> <span class="o">-</span><span class="n">DskipTests</span>
 
-
 <span class="n">cd</span> <span class="n">entando</span><span class="o">-</span><span class="n">archetypes</span>
 <span class="n">mvn</span> <span class="n">clean</span> <span class="n">install</span> <span class="o">-</span><span class="n">DskipTests</span>
 </pre></div>
 </div>
-</li>
-</ul>
-<ul id="index-3">
-<li><p class="first">Create an empty directory and generate a test web application, for instance based on the Entando bootstrap archetype, and type bogus data when asked:</p>
+<p id="index-3">Create an empty directory and generate a test web application, for instance based on the Entando bootstrap archetype, and type bogus data when asked:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>$ mvn archetype:generate -Dfilter=entando-archetype-portal-bootstrap
 </pre></div>
 </div>
-</li>
-</ul>
-<blockquote>
-<div><p>otherwise, if you want to use the ready applications samples, you can run <strong>entando ux-packages</strong>:</p>
+<p>otherwise, if you want to use the ready applications samples, you can run <strong>entando ux-packages</strong>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">entando</span><span class="o">-</span><span class="n">ux</span><span class="o">-</span><span class="n">packages</span>
 <span class="n">cd</span> <span class="n">portalexample</span>
 <span class="n">mvn</span> <span class="n">clean</span> <span class="n">jetty</span><span class="p">:</span><span class="n">run</span>
 </pre></div>
 </div>
-</div></blockquote>
 <p>Finally:</p>
-<ul class="simple">
-<li>Open your browser at [<a class="reference external" href="http://localhost:8080/](http://localhost:8080/">http://localhost:8080/](http://localhost:8080/</a>) (ignore the _404_ error)</li>
-<li>Click on the link you will find on that page</li>
-</ul>
+<p>Open your browser at [<a class="reference external" href="http://localhost:8080/](http://localhost:8080/">http://localhost:8080/](http://localhost:8080/</a>) (ignore the _404_ error)
+Click on the link you will find on that page</p>
 <p><strong>NOTE</strong>: If you want to deepen how to use the Entando archetypes, visit the wiki of [entando-archetypes](<a class="reference external" href="https://github.com/entando/entando-archetypes">https://github.com/entando/entando-archetypes</a>) project.</p>
 </div>
 
@@ -128,12 +109,15 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_entando.svg" alt="Logo"/>
+            </a></p>
   <h4>Previous topic</h4>
   <p class="topless"><a href="getting_started.html"
                         title="previous chapter">Getting Started Version 4.3.1</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="entando_core.html"
-                        title="next chapter">Welcome to the Entando core project wiki Version 4.3.1</a></p>
+  <p class="topless"><a href="../v432/index.html"
+                        title="next chapter">Entando documentation Version 4.3.2!</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -162,7 +146,7 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="entando_core.html" title="Welcome to the Entando core project wiki Version 4.3.1"
+          <a href="../v432/index.html" title="Entando documentation Version 4.3.2!"
              >next</a> |</li>
         <li class="right" >
           <a href="getting_started.html" title="Getting Started Version 4.3.1"

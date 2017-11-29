@@ -6,7 +6,7 @@ Getting Started Version 4.3.1
 
 Here what you need to start using Entando:
 
-* [Java JDK version >= 7](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* Java JDK version >= 7 (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 
 * Ensure which JDK's version you are using, running the following command at the command prompt::

@@ -1,5 +1,5 @@
 ******************************************************
-Welcome to the Entando core project wiki Version 4.3.1
+Entando core project Version 4.3.1
 ******************************************************
 
 Our goal, in combination with the official https://www.entando.com website, is to provide users and developers an easy way to quickly get started the Entando platform. Throught this wiki, you can learn how to join the Entando core.
@@ -49,11 +49,10 @@ Capabilities
 
 
 
-Main Features
-#############
+
 
 Application Management Features
-===============================
+###############################
 
     * Centralized Administrative Console
     * Responsive, Mobile Rendering, Accessible Administration
@@ -67,7 +66,7 @@ Application Management Features
 .. index:: CMS
 
 CMS Features
-============
+############
 
     * Contents and digital assets management
     * Content classification
@@ -84,7 +83,7 @@ CMS Features
     * SEO urls
 
 Framework Features
-==================
+##################
 
     * Components based
     * Cloud deployment
