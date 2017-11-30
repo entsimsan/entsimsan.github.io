@@ -6,6 +6,8 @@
 Welcome to Entando documentation!
 =================================================
 
+Entando's Documentation in PDF :download:`Here <Docs/EntandoDocumentation.pdf>`
+
 Contents:
 
 .. toctree::
