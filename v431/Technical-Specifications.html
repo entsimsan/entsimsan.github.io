@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Technical Specifications &#8212; Entando Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Entando Documentation 1.0 documentation" href="../index.html" />
+    <link rel="up" title="V4.3.1" href="index.html" />
+    <link rel="next" title="Technical Notes" href="Entando-4.3.x-Tech-Notes.html" />
+    <link rel="prev" title="How to use the Core" href="How-to-use-the-Core.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Entando-4.3.x-Tech-Notes.html" title="Technical Notes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="How-to-use-the-Core.html" title="How to use the Core"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Entando Documentation 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../versions.html" >Entando Versions</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">V4.3.1</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="technical-specifications">
+<h1>Technical Specifications<a class="headerlink" href="#technical-specifications" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="deployment-compatiblity">
+<span id="index-0"></span><h2>Deployment Compatiblity<a class="headerlink" href="#deployment-compatiblity" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="28%" />
+<col width="14%" />
+<col width="18%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Operating
+Systems</strong></th>
+<th class="head"><strong>Servlet
+Containers</strong></th>
+<th class="head"><strong>Applica
+tion
+Servers</strong></th>
+<th class="head"><a href="#id1"><span class="problematic" id="id2">**</span></a>Databases*
+*</th>
+<th class="head"><strong>Public &amp;
+Private
+Cloud</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Linux (various
+distributions
+and versions)</td>
+<td>Jetty</td>
+<td>JBoss v5</td>
+<td>PostgreSQL</td>
+<td>Cloud based</td>
+</tr>
+<tr class="row-odd"><td>Windows</td>
+<td>Apache Tomcat (v6,
+v7, v8)</td>
+<td>JBoss 7.5
+(JBoss
+EAP V6.4)</td>
+<td>MySQL</td>
+<td>Deployable to
+the cloud
+(EC2, Heroku,
+Jelastic,
+CloudBees)
+and
+virtualized
+environments
+(VMware)</td>
+</tr>
+<tr class="row-even"><td>Mac OS X</td>
+<td>JBOSS v5</td>
+<td>Apache
+Tomcat</td>
+<td>Oracle</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>Oracle WebLogic</td>
+<td>Oracle
+WebLogic</td>
+<td>SQL Server</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>noSQL DBs
+(MongoDB)</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="platform-details">
+<h2>Platform Details<a class="headerlink" href="#platform-details" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="21%" />
+<col width="11%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Technolo
+gies
+Used</strong></th>
+<th class="head"><strong>Web
+Services</strong></th>
+<th class="head"><a href="#id3"><span class="problematic" id="id4">**</span></a>Archi
+tecture
+**</th>
+<th class="head"><strong>Perform
+ance
+and
+Scalabili
+ty</strong></th>
+<th class="head"><a href="#id5"><span class="problematic" id="id6">**</span></a>Scripti
+ng
+Language*
+*</th>
+<th class="head"><strong>Securit
+y</strong></th>
+<th class="head"><strong>Autenti
+cation
+Managemen
+t</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Java
+J2EE/EE</td>
+<td>JSON</td>
+<td>Multi-L
+ayers</td>
+<td>Clusterin
+g
+Configura
+tion</td>
+<td>Javascrip
+t
+(JQuery)</td>
+<td>Pluggable
+Authentic
+ation</td>
+<td>Open LDAP</td>
+</tr>
+<tr class="row-odd"><td>Spring</td>
+<td>XML</td>
+<td>Compone
+nts
+based</td>
+<td>Database
+Replicati
+on</td>
+<td>HTML5</td>
+<td>Email
+Verificat
+ion</td>
+<td>Kerberos</td>
+</tr>
+<tr class="row-even"><td>Struts2</td>
+<td>REST</td>
+<td>Full
+support
+of
+RESTful
+APIs</td>
+<td>Advanced
+Caching
+(Ehcache,
+Memcached
+,
+etc.)</td>
+<td>CSS3</td>
+<td>Granular
+Permissio
+ning</td>
+<td>SiteMinde
+r
+(SSO)</td>
+</tr>
+<tr class="row-odd"><td>AJAX</td>
+<td>Spring HTTP</td>
+<td>Depende
+ncy
+injecti
+on
+provide
+s
+pluggab
+le
+service
+impleme
+ntation
+s</td>
+<td>Load
+Balancing
+Support</td>
+<td>AngularJS</td>
+<td>LDAP
+Authentic
+ation</td>
+<td>CAS</td>
+</tr>
+<tr class="row-even"><td>Ehcache</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Lucene-So
+lr
+Search
+Platform
+Support</td>
+<td>Others</td>
+<td>Session
+Managemen
+t</td>
+<td>Apache
+Directory
+Studio</td>
+</tr>
+<tr class="row-odd"><td>Memcached</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Performan
+ce
+monitorin
+g
+support
+(Java
+profiling
+,
+etc.)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Lucene</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Solr</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Velocity</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>HTML5</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Angular JS</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Bootstrap3</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Freemarker</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>JSP</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>ORMLite</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Apache CXF</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>JAXB</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_entando.svg" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Technical Specifications</a><ul>
+<li><a class="reference internal" href="#deployment-compatiblity">Deployment Compatiblity</a></li>
+<li><a class="reference internal" href="#platform-details">Platform Details</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="How-to-use-the-Core.html"
+                        title="previous chapter">How to use the Core</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Entando-4.3.x-Tech-Notes.html"
+                        title="next chapter">Technical Notes</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/v431/Technical-Specifications.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Entando-4.3.x-Tech-Notes.html" title="Technical Notes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="How-to-use-the-Core.html" title="How to use the Core"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Entando Documentation 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../versions.html" >Entando Versions</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >V4.3.1</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Simone Sanna.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.9.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+##################
+How the Core works
+##################
+
+
+The **Entando Core**, underlying the platform, consists of three main
+components (engine, admin-console, and portal-ui) plus a set of
+components that solve specific business needs and a series of
+orchestration capabilities exposed by using robust APIs and consumed by
+each application.
+
+-  **engine** includes all the basic core features and services of the
+   platform.
+-  **admin-console** includes basic engine and administration features.
+-  **portal-ui**: includes basic engine features, administration
+   features and presentation features.
+
+``entando-engine`` is a Maven based project defining abstract
+specifications of the core objects model (Java Class) such as User,
+Page, Content, widget, and their implementation. It defines interfaces
+that can manage core services (see the core services list), for example
+user manager, group manager, content manager, and similar. It defines
+basic Content Management System (CMS) components, basic database
+resources, APIs services management. It also provides interfaces to
+manage integration with a wide range of applications, through REST APIs,
+RSS, Enterprise Service Bus, web services, and access to all features
+from a single point of entry. Furthermore, it defines interfaces for
+secure building and safe administration.
+
+``entando admin-console`` is a Maven based project including tools to
+manage administrative features of the core and WCMS functionalities. For
+instance, it provides a specific manager for administration area; it
+manages specific actions into admin console; it defines a specific REST
+APIs server, defines API OAuth servlets to protect Entando APIs. The
+admin-console component depends on engine component.
+
+``entando portal-ui`` is a Maven based project comprising all the
+features/tools to create interactive web UIs. It consists of Front-End
+servlets, functionality for security services to manage user access
+requests. The portal-ui component depends on admin-console and engine
+components.
+
+Your first web application example, based on the three core components,
+can be easily created through the related archetype as you can try in
+the `Getting
+Started <https://github.com/entando/entando-core/wiki/Getting-Started>`__
+page.
+
+Through the entando portal-ui functionality, an end user uses
+interactive web UI to enjoy all the Entando services.
+
+Through the entando admin-console functionality, an admin user can enjoy
+the administration console services.
+
+A Developer User can extend any core components (engine, admin-console,
+portal-ui), not only to improve functionality of the core itself, but
+also to create new extensions of the Entando platform such as:
+**Plugins**, **Bundles** (see
+`entando-components <https://github.com/entando/entando-components>`__).
+
+As shown in the picture below, an Entando basic application is composed
+by engine, admin-console, portal-ui core components.
+
+.. figure:: entando_core_4.2.png
+   :scale: 50 %
+   :alt: Entando Core Diagram
+
+   Figure1: Entando Core Diagram
+
+   Legend: The picture shows the main components of Entando
+
+
+Dependency of admin-console component with engine component
+-----------------------------------------------------------
+
+The admin-console component depends on engine component.
+
+Example: Users’ Administration
+
+.. figure:: admin-engine.png
+   :scale: 50 %
+   :alt: Entando Admin Engine
+
+   Figure2: Entando Admin Engine
+
+
+
+
+- An Admin User sends a request to the servlet about users administration (profile, role, authorization, etc.). A Dispatcher filter looks at the request and then determines N Actions (search User Action, User Profile Action, Role Action, User Auth Action etc.)
+
+- The Front Controller of the admin-console module invokes M Interceptors, responsible of the request processing (authorization, validation, etc.).   Interceptors are applied before and after the Actions execution.
+
+- Actions are executed and the consequently Results are generated.
+
+- A possible Result is the View creation (jsp, json, tiles, etc.), but more different kinds of results can be generated for each Action. The result is returned to the Admin User.
+
+- To execute the Actions, Admin-console component uses appropriate Managers (User Manager, User Profile Manager, Role Manager, etc.) capable to manage, for example, the User object. Managers are included in the engine component.
+
+The execution process of every Action provided by the admin-console is based on Apache Struts2 pattern. The admin-console delegates some responsibilities to the engine component, for example, some control tasks that are executed by the Interceptors classes defined in the determined Stack and some specific actions in the Model (FileSystem, data sources, etc.).
+
+
+
+
+Dependency of portal-ui with admin-console and engine components
+----------------------------------------------------------------
+
+.. figure:: portal-ui.png
+   :scale: 50 %
+   :alt: Portal UI
+
+   Figure3: Portal UI component
+
+The portal-ui component depends on admin-console component and engine
+component, as shown in the next picture.
+
+Through the Front-End servlets and specific services controller and
+services executor, the user’s access requests and services requests are
+managed.
+
+
+entando-core services
+---------------------
+
+The Entando’s core provides several services:
+
+-  **API Rest Server**: managing resources catalogs served through REST
+   APIs.
+-  **Authentication Provider**: verifying access permissions.
+-  **Configuration: managing** the core services and plugins
+   configuration.
+-  **Cache**: allowing content caching for high performance.
+-  **Category**: managing the Category Tree.
+-  **Controller**: managing the execution of client’s request.
+-  **Group**: managing user groups.
+-  **i18n**: providing strings based on the used local language.
+-  **Key Generator**: creating a sequence of pseudo-random characteristics.
+-  **Lang**: managing multi-language.
+-  **Notifier**: allowing events notification.
+-  **OAuth Consumer**: provides third-party applications for
+   communication through APIs.
+-  **Page**: managing pages in a tree-like structure and handling the
+   structure of the page itself.
+-  **Page Model**: managing multiple templates active on Entando web
+   applications.
+-  **Authorization**: managing the support for authorization and access
+   control services for users.
+-  **Role**: managing the different roles granted to users (user, admin,
+   editor...).
+-  **Shortcut**: allowing easy access to information from homepage to
+   administration area.
+-  **Widget**: allowing widget management.
+-  **Url**: managing URLs and creating full URLs to a application's page
+   based on essential information.
+-  **User Manager**: allowing to manage registered users.
+-  **Installer Component Manager**: allowing the easy installation of
+   plugins and bundles.
+-  **Database Management**: providing support to the installer manager,
+   and allowing restore and backup of the components.
+-  **Content Management**: providing the functionalities to manage
+   contents, as modeling of data types, data search, etc.
+-  **Resource Management**: providing various functionalities for
+   resource management.
+-  **File Browser**: allowing to browse through directories the folders
+-  **Fragment**: allowing to manage GUI sections
+-  **Link Resolver Manager**: allowing to manage symbolic links
+-  **Action Logger**: allowing to track system actions
+-  **Storage**: allowing to manage system resources
+-  **User Profile**: allowing to manage user profile
+-  **Content Model Management**: allowing to manage content model
+-  **Renderer Manager**: allowing to check and manage contents in
+   various situations, using content models, links resolving, caching
+   etc.
+-  **Content Dispenser**: allowing to manage the content dispatcher
+-  **Template Engine**: allowing to customize dynamically all components
+   of Entando page (widget, resources, files, etc.)
