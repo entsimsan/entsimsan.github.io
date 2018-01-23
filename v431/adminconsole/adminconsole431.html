@@ -1,0 +1,1516 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Entando Admin Console Overview &#8212; Entando 4.3 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Page Management" href="../entandosections/pagedesigner/index.html" />
+    <link rel="prev" title="Environment Setup" href="../installation/installation.html" /> 
+  </head>
+  <body>
+
+<table width="100%" style="width: 100%; background-color: white;">
+  <tr>
+    <td rowspan="2" style="padding: 10px 0px 10px 10px;">
+      <a href="../../index.html" title="Home"><img src="../../_static/banner.png" alt="Entando banner" border="0" /></a>
+    </td>
+    <td style="padding: 10px 10px 0px 0px; text-align: right; vertical-align: top;">
+      <a href="../../index.html" title="Home">Home</a>
+	<a href="https://www.entando.com/" title="Entando">Entando</a>
+      <a href="https://twitter.com/entando" title="Twitter">Twitter</a>
+      
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 0px 10px 0px 0px; text-align: right; vertical-align: bottom;">
+
+
+    </td>
+  </tr>
+</table>
+
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../entandosections/pagedesigner/index.html" title="Page Management"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../installation/installation.html" title="Environment Setup"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Entando 4.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../documentation.html" >Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../documentationv431.html" accesskey="U">Documentation Version 4.3.1</a> &#187;</li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <span class="target" id="admin-console"></span><div class="section" id="entando-admin-console-overview">
+<span id="index-0"></span><h1>Entando Admin Console Overview<a class="headerlink" href="#entando-admin-console-overview" title="Permalink to this headline">¶</a></h1>
+<p>The purpose of this document is to describe the elements and
+functionalities provided by the Entando Admin Console.
+The Admin Console includes tools to manage administrative core features and WCMS functionality.</p>
+<div class="section" id="entando-admin-console-version-4-3-1">
+<h2>Entando Admin Console Version 4.3.1<a class="headerlink" href="#entando-admin-console-version-4-3-1" title="Permalink to this headline">¶</a></h2>
+<p>With Entando version 4.3.1 the Admin Console has been redesigned and
+renewed with the adoption of the PatternFly framework and guidelines.</p>
+<p>PatternFly is built on top of Bootstrap3, it provides an enterprise
+grade UX look and feel based on research and UX best practices.</p>
+</div>
+<div class="section" id="id1">
+<h2>Admin Console<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>The Entando main view is the entry point for every administration
+activity. It is divided into two distinct areas. On the left-hand side
+of the screen there is a tabbed menu, which gives access to all
+Entando’s functionalities, while on the right hand-side of the screen,
+the Dashboard provides an overview of Entando status and a quick access
+to some functionalities(
+<a class="reference internal" href="#figure1"><span class="std std-ref">Figure 1: Main View</span></a>).</p>
+<div class="figure align-center" id="id10">
+<span id="figure1"></span><a class="reference internal image-reference" href="../../_images/image4.png"><img alt="Main View" src="../../_images/image4.png" style="width: 1435.5px; height: 781.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 1: Main View</em></span></p>
+</div>
+<div class="section" id="dashboard">
+<span id="index-1"></span><h3>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline">¶</a></h3>
+<p>The dashboard, see
+<a class="reference internal" href="#figure2"><span class="std std-ref">Figure 2: Dashboard</span></a> below, is divided into areas, those areas
+are:</p>
+<ul class="simple">
+<li>Page Status (gives an overview of the status of the pages: Online,
+Online /= Draft and Draft)</li>
+<li>Content Status (gives an overview of the content’s status: Approved,
+Work, Approved with changes)</li>
+<li>Page List (list of all pages: Description, Status, Last Modified)</li>
+<li>Content List (list of contents: Description, Author, Type, Status,
+Last Modified)</li>
+<li>Fast Settings</li>
+<li>Users List (quick access to Users list)</li>
+<li>Categories (quick access to categories)</li>
+<li>Labels &amp; Languages (quick access to labels and languages)</li>
+<li>Reload Config (quick access to reload configuration functionality)</li>
+<li>Add Content (quick access to adding content functionalities)</li>
+<li>Add Asset (quick access to adding assets functionalities)</li>
+<li>Add User (quick access to add user functionalities)</li>
+</ul>
+<div class="figure align-center" id="id11">
+<span id="figure2"></span><a class="reference internal image-reference" href="../../_images/image5.png"><img alt="Dashboard" src="../../_images/image5.png" style="width: 1287.75px; height: 735.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 2: Dashboard</em></span></p>
+</div>
+</div>
+<div class="section" id="menu">
+<span id="index-2"></span><h3>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">¶</a></h3>
+<p>The tools panel is a tabbed menu from which you can access every
+Entando’s elements. It is divided in main sections (refer to the next
+section called “Main Sections” for more details).</p>
+<div class="figure align-center" id="id12">
+<span id="figure3"></span><a class="reference internal image-reference" href="../../_images/image6.png"><img alt="Menu" src="../../_images/image6.png" style="width: 235.5px; height: 782.25px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 3: Menu</em></span></p>
+</div>
+</div>
+</div>
+<div class="section" id="admin-console-main-sections">
+<span id="index-3"></span><h2>Admin Console Main Sections<a class="headerlink" href="#admin-console-main-sections" title="Permalink to this headline">¶</a></h2>
+<p>The Admin Console is made up of different sections, generally further
+divided in subsections; each one of them is accessible from a tabbed
+menu on the left-hand side of the screen (see picture below)</p>
+<p>Every section provides specific functionalities.</p>
+<p>The main sections are:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#page-designer"><span class="std std-ref">Page designer</span></a></li>
+<li><a class="reference internal" href="#ux-pattern"><span class="std std-ref">UX Pattern</span></a></li>
+<li><a class="reference internal" href="#integrations"><span class="std std-ref">Integrations</span></a></li>
+<li><a class="reference internal" href="#user-settings"><span class="std std-ref">User Settings</span></a></li>
+<li><a class="reference internal" href="#apps"><span class="std std-ref">APPS</span></a></li>
+<li><a class="reference internal" href="#settings"><span class="std std-ref">Settings</span></a></li>
+</ul>
+<p>The next paragraphs provide more details for every menu section.</p>
+<div class="section" id="page-designer">
+<span id="index-4"></span><span id="id2"></span><h3>Page designer<a class="headerlink" href="#page-designer" title="Permalink to this headline">¶</a></h3>
+<p>The Page Designer section, deals with all page management related
+activities, it is made up of three subsections as shown below, (
+<a class="reference internal" href="#figure4"><span class="std std-ref">Figure 4: Page Designer Menu</span></a>).</p>
+<ul class="simple">
+<li>Page Designer<ul>
+<li>Page Tree</li>
+<li>Page Configuration</li>
+<li>Page Settings</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id13">
+<span id="figure4"></span><a class="reference internal image-reference" href="../../_images/image7.png"><img alt="Menu" src="../../_images/image7.png" style="width: 296.25px; height: 783.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 4: Page Designer Menu</em></span></p>
+</div>
+<div class="section" id="page-tree">
+<span id="index-5"></span><h4>Page Tree<a class="headerlink" href="#page-tree" title="Permalink to this headline">¶</a></h4>
+<p>The Page Tree subsection shows the hierarchical structure of the pages,
+its status, and let you perform all actions needed to manage them, such
+as adding a new page, edit, configure, detail, clone, publish or
+unpublish pages (see
+<a class="reference internal" href="#figure5"><span class="std std-ref">Figure 5: Page Tree</span></a>).</p>
+<div class="figure align-center" id="id14">
+<span id="figure5"></span><a class="reference internal image-reference" href="../../_images/image8.png"><img alt="Page Tree" src="../../_images/image8.png" style="width: 1283.25px; height: 648.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 5: Page Tree</em></span></p>
+</div>
+<div class="section" id="pages-s-actions">
+<h5>Pages’s Actions<a class="headerlink" href="#pages-s-actions" title="Permalink to this headline">¶</a></h5>
+<p>For every page present, in the Page Tree, you have access to a set of
+actions, (see
+<a class="reference internal" href="#figure6"><span class="std std-ref">Figure 6: Page Actions</span></a>), through the kebab menu (three dots menu), from which you can:</p>
+<ul class="simple">
+<li>Add (add a new page hierarchical dependent from that page)</li>
+<li>Edit (change the parameters that define a page)</li>
+<li>Configure (change the widgets associated with the frames in the page)</li>
+<li>Details (get general information on the page: Name, Code, Type)</li>
+<li>Clone (replicate the page)</li>
+<li>Delete (remove the page)</li>
+<li>Publish/Unpublish (making visible/invisible the page)</li>
+</ul>
+<div class="figure align-center" id="id15">
+<span id="figure6"></span><a class="reference internal image-reference" href="../../_images/image9.png"><img alt="Page Tree" src="../../_images/image9.png" style="width: 1275.0px; height: 238.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 6: Page Actions</em></span></p>
+</div>
+<p><strong>Add a new page</strong></p>
+<p>This functionality can be accessed from the Page tree view, (see
+<a class="reference internal" href="#figure7"><span class="std std-ref">Figure 7: Add a Page</span></a>), through the Add button; in that case you need to select its
+hierarchical placement afterwards. Another way to add a new page is to
+select the Add action, for a page, from its kebab menu; in this case
+your new page will be a daughter of the selected page.</p>
+<p>A page must have a title, a code, a placement, an owner group, a join
+group and a page model.</p>
+<p>Please refer to
+<a class="reference internal" href="../entandosections/pagedesigner/page-management.html#add-new-page"><span class="std std-ref">Add new pages</span></a> for details.</p>
+<div class="figure align-center" id="id16">
+<span id="figure7"></span><a class="reference internal image-reference" href="../../_images/image10.png"><img alt="Add a Page" src="../../_images/image10.png" style="width: 1283.25px; height: 730.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 7: Add a Page</em></span></p>
+</div>
+<p><strong>Edit a page</strong></p>
+<p>This action refers to an already present page. The edit page view is
+divided into sections (
+<a class="reference internal" href="#figure8"><span class="std std-ref">Figure 8: Edit a Page</span></a>):</p>
+<ul class="simple">
+<li>Info</li>
+<li>Title (title of the page, mandatory)</li>
+<li>Code (code of the page, assigned automatically, not changeable)</li>
+<li>Page groups<ul>
+<li>Owner Group (owner of the page, assigned at creation time, and not
+changeable)</li>
+<li>Join Group (group to join, selectable from a drop-down list of
+available groups)</li>
+</ul>
+</li>
+<li>Settings<ul>
+<li>Page Model (the model of the page, mandatory)</li>
+<li>Displayed in menu (set whether it must be displayed in menu or
+not, settable to On or Off)</li>
+<li>SEO (Search Engine Optimization, set whether it must be optimized
+for Search Engine, settable to On or Off)</li>
+<li>Charset (selectable between available charset, i.e. utf8,
+iso-88591)</li>
+<li>Mime Type (identifies the type of information, namely text/html,
+application/JSON, and so forth)</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id17">
+<span id="figure8"></span><a class="reference internal image-reference" href="../../_images/image11.png"><img alt="Edit a Page" src="../../_images/image11.png" style="width: 1287.0px; height: 645.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 8: Edit a Page</em></span></p>
+</div>
+<p><strong>Configure a page</strong></p>
+<p>In the page configuration section, you can assign available widgets to
+the frames in the page. The page model defines the available frames or
+in other words the page’s layout. The available Widgets are listed from
+a Widgets list on the right-hand side of the screen. You can drag
+widgets and drop them in a frame of your choice, how it’s showed in the
+<a class="reference internal" href="#figure9"><span class="std std-ref">Figure 9: Frames in a page</span></a> and
+<a class="reference internal" href="#figure10"><span class="std std-ref">Figure 10: Drag and Drop Widgets to Frames</span></a>.</p>
+<p>You can also publish or unpublish the page or show its preview.</p>
+<div class="figure align-center" id="id18">
+<span id="figure9"></span><a class="reference internal image-reference" href="../../_images/image12.png"><img alt="Frames in a page" src="../../_images/image12.png" style="width: 1273.5px; height: 723.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 9: Frames in a page</em></span></p>
+</div>
+<div class="figure align-center" id="id19">
+<span id="figure10"></span><a class="reference internal image-reference" href="../../_images/image13.png"><img alt="Drag and Drop Widgets to Frames" src="../../_images/image13.png" style="width: 1411.5px; height: 780.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 10: Drag and Drop Widgets to Frames</em></span></p>
+</div>
+<p><strong>Details</strong></p>
+<p>This section shows the hierarchical placement of the page, along with
+the list of the contents present, and any contents that are linked to
+the current page.</p>
+<p><strong>Clone</strong></p>
+<p>The clone action clones the page with its structure and content, and
+makes the cloned page a daughter.</p>
+<p><strong>Delete</strong></p>
+<p>This action removes the page; please note that pages with dependent
+pages cannot be deleted.</p>
+<p><strong>Publish/Unpublish</strong></p>
+<p>This action let you publish the page if unpublished or unpublish if it
+is published.</p>
+</div>
+</div>
+<div class="section" id="page-configuration">
+<h4>Page Configuration<a class="headerlink" href="#page-configuration" title="Permalink to this headline">¶</a></h4>
+<p>Page Configuration subsection, gives you immediate access to homepage
+configuration.</p>
+</div>
+<div class="section" id="page-settings">
+<h4>Page Settings<a class="headerlink" href="#page-settings" title="Permalink to this headline">¶</a></h4>
+<p>Page Settings subsection, gives you immediate access to general settings
+such as: Home Page, Page not found, Page for generic error and so on,
+(see
+<a class="reference internal" href="#figure11"><span class="std std-ref">Figure 11: Page Settings</span></a>).</p>
+<div class="figure align-center" id="id20">
+<span id="figure11"></span><a class="reference internal image-reference" href="../../_images/image14.png"><img alt="Add a Page" src="../../_images/image14.png" style="width: 1285.5px; height: 460.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 11: Page Settings</em></span></p>
+</div>
+</div>
+</div>
+<div class="section" id="ux-pattern">
+<span id="index-6"></span><span id="id3"></span><h3>UX Pattern<a class="headerlink" href="#ux-pattern" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>UX Pattern</strong> section is made up of three subsections and it’s the
+place where general UX Pattern settings are set.</p>
+<ul>
+<li><p class="first">UX Pattern</p>
+<blockquote>
+<div><ul class="simple">
+<li>Widget (entry point for widgets management)</li>
+<li>Fragments</li>
+<li>Page Models</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="figure align-center" id="id21">
+<span id="figure12"></span><a class="reference internal image-reference" href="../../_images/image15.png"><img alt="UX Pattern" src="../../_images/image15.png" style="width: 293.25px; height: 780.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 12: UX Pattern</em></span></p>
+</div>
+<div class="section" id="widgets">
+<span id="index-7"></span><h4>Widgets<a class="headerlink" href="#widgets" title="Permalink to this headline">¶</a></h4>
+<p>A Widget is an independent software component configured and executed
+within your application’s Page to build UX/UI blocks, which provides a
+specific functionality.</p>
+<p>This section shows a list of all available Widgets grouped in various
+types (see
+<a class="reference internal" href="#figure13"><span class="std std-ref">Figure 13: Widgets List</span></a>):</p>
+<ul class="simple">
+<li>User Widgets (user-generated widgets, made from the Admin Console)</li>
+<li>Custom Widgets (widgets designed to meet specific applications needs)</li>
+<li>Stock Widgets (widgets provided by Entando to implement general, common functionalities)</li>
+<li>Specific Application Widgets, for example if the CMS module is installed it provides Content Management related widgets.</li>
+<li>Plugins widgets (widgets provided by the installed plugins)</li>
+</ul>
+<p>For every Widget the list shows:</p>
+<ul class="simple">
+<li>Widget name</li>
+<li>Widget code</li>
+<li>Number of pages using the widget</li>
+</ul>
+<p>Actions menu, the available actions depend on the widget, and could be:</p>
+<ul class="simple">
+<li>Info</li>
+<li>Add widget</li>
+<li>Add Service (if the widget provides a service)</li>
+</ul>
+<p>Note that some Widgets could have no action associated too.</p>
+<p>An add button is also present for adding new user-defined Widgets.</p>
+<div class="figure align-center" id="id22">
+<span id="figure13"></span><a class="reference internal image-reference" href="../../_images/image16.png"><img alt="Widgets List" src="../../_images/image16.png" style="width: 1305.0px; height: 675.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 13: Widgets List</em></span></p>
+</div>
+</div>
+<div class="section" id="fragments">
+<span id="index-8"></span><h4>Fragments<a class="headerlink" href="#fragments" title="Permalink to this headline">¶</a></h4>
+<p>Fragments are HTML blocks that include Freemarker <a class="footnote-reference" href="#id9" id="id4">[1]</a> instructions by
+using specific tags that should be replaced by suitable values each time
+the fragment is used.</p>
+<p>Widgets are rendered using the <em>Entando Fragments.</em></p>
+<p>From this subsection, you get access to a list of all available
+fragments, (
+<a class="reference internal" href="#figure14"><span class="std std-ref">Figure 14: Fragments</span></a>), a search functionality is also available.</p>
+<p>The Fragments list shows in tabled format:</p>
+<ul class="simple">
+<li>Code</li>
+<li>Widget type</li>
+<li>Plugin</li>
+<li>Actions</li>
+</ul>
+<p>An Add button let you add a new Fragment.</p>
+<div class="figure align-center" id="id23">
+<span id="figure14"></span><a class="reference internal image-reference" href="../../_images/image17.png"><img alt="Add a Page" src="../../_images/image17.png" style="width: 1316.25px; height: 541.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 14: Fragments</em></span></p>
+</div>
+<p><strong>Add new fragments</strong></p>
+<p>In adding a new Fragment, (see
+<a class="reference internal" href="#figure15"><span class="std std-ref">Figure 15: Add new Fragments</span></a>), the following parameters
+are mandatory:</p>
+<ul class="simple">
+<li>Code</li>
+<li>Gui Code (Freemarker formatted text)</li>
+</ul>
+<div class="figure align-center" id="id24">
+<span id="figure15"></span><a class="reference internal image-reference" href="../../_images/image18.png"><img alt="Add new Fragments" src="../../_images/image18.png" style="width: 1313.25px; height: 375.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 15: Add new Fragments</em></span></p>
+</div>
+</div>
+<div class="section" id="page-models">
+<span id="index-9"></span><h4>Page Models<a class="headerlink" href="#page-models" title="Permalink to this headline">¶</a></h4>
+<p>In the Page Models subsection, a list of available page models is
+displayed, (
+<a class="reference internal" href="#figure16"><span class="std std-ref">Figure 16: Page Models List</span></a>). Each Page Model has action associated with it:</p>
+<ul class="simple">
+<li>Edit (gives access to the page model editing view,
+<a class="reference internal" href="#figure17"><span class="std std-ref">Figure 17: Page Model Edit</span></a>)</li>
+<li>Details (shows details on the page model)</li>
+<li>Delete (deletes the page model)</li>
+</ul>
+<p>The Page Model is the design of an application’s page. It’s s defined
+through 2 configuration elements:</p>
+<ul class="simple">
+<li>XML Configuration</li>
+<li>Template</li>
+</ul>
+<p>The <strong>XML Configuration</strong> is an XML formatted text in which we define
+the frames list that will make up that model of the page. The basic tags
+that must be present are &lt;frames&gt;&lt;/frames&gt; which collects all the frames
+and &lt;frame&gt;&lt;/frame&gt; which defines the frame with some specific values
+for the frame specific defined properties.</p>
+<p>The <strong>Template</strong> represents the look and feel and the real layout of the
+page. It’s based on Velocity template script.</p>
+<p>The Velocity Template Language (VTL) is meant to provide an easy, simple
+and clean way to incorporate dynamic content in a web page; it’s
+powerful and easy at the same time; it supports statements and
+directives, references and comments, access to exposed java objects and
+methods.</p>
+<p>The template defines the look and feel of the rendered page model. In
+the template you define in which condition and how to show a given frame and also
+how it will be rendered.</p>
+<p>At the bottom of the Page Model Edit view, the template is rendered for
+previewing its structure based on the defined XML configuration.</p>
+<div class="figure align-center" id="id25">
+<span id="figure16"></span><a class="reference internal image-reference" href="../../_images/image19.png"><img alt="Page Models List" src="../../_images/image19.png" style="width: 1314.75px; height: 282.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 16: Page Models List</em></span></p>
+</div>
+<div class="figure align-center" id="id26">
+<span id="figure17"></span><a class="reference internal image-reference" href="../../_images/image20.png"><img alt="Page Model Edit" src="../../_images/image20.png" style="width: 1290.75px; height: 729.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 17: Page Model Edit</em></span></p>
+</div>
+</div>
+</div>
+<div class="section" id="integrations">
+<span id="index-10"></span><span id="id5"></span><h3>Integrations<a class="headerlink" href="#integrations" title="Permalink to this headline">¶</a></h3>
+<p>From this section it is possible to configure Entando’s integration with
+other systems via REST based APIs and is made up of two subsections,
+(see
+<a class="reference internal" href="#figure18"><span class="std std-ref">Figure 18: Integrations</span></a>):</p>
+<ul class="simple">
+<li>Integrations<ul>
+<li>Components</li>
+</ul>
+</li>
+<li>API Management<ul>
+<li>Resources</li>
+<li>Services</li>
+<li>Consumer</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id27">
+<span id="figure18"></span><a class="reference internal image-reference" href="../../_images/image21.png"><img alt="Integrations" src="../../_images/image21.png" style="width: 294.0px; height: 786.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 18: Integrations</em></span></p>
+</div>
+<div class="section" id="components">
+<h4>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h4>
+<p>From Components (Plugins) you get access to a list of all installed
+components, (see
+<a class="reference internal" href="#figure19"><span class="std std-ref">Figure 19: Components</span></a>)</p>
+<p>You can configure the particular component by clicking on its name, in
+the menu.</p>
+<p>The main setting you can change of a particular component is whether it
+is active or not, other available settings are dependable from the
+particular component features, the
+<a class="reference internal" href="#figure20"><span class="std std-ref">Figure 20: Component Configuration Example</span></a>, shows, an example of the
+parameters for the “LDAP connector”</p>
+<div class="figure align-center" id="id28">
+<span id="figure19"></span><a class="reference internal image-reference" href="../../_images/image22.png"><img alt="Components" src="../../_images/image22.png" style="width: 398.25px; height: 253.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 19: Components</em></span></p>
+</div>
+<div class="figure align-center" id="id29">
+<span id="figure20"></span><a class="reference internal image-reference" href="../../_images/image23.png"><img alt="Component Configuration Example" src="../../_images/image23.png" style="width: 1434.75px; height: 631.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 20: Component Configuration Example</em></span></p>
+</div>
+</div>
+<div class="section" id="api-management">
+<h4>API Management<a class="headerlink" href="#api-management" title="Permalink to this headline">¶</a></h4>
+<p>From this sub-section, (see
+<a class="reference internal" href="#figure21"><span class="std std-ref">Figure 21: API Management</span></a>), it is possible to manage and
+configure the Entando API integration.</p>
+<ul class="simple">
+<li>API Management<ul>
+<li>Resources</li>
+<li>Services</li>
+<li>Consumer</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id30">
+<span id="figure21"></span><a class="reference internal image-reference" href="../../_images/image24.png"><img alt="API Management" src="../../_images/image24.png" style="width: 450.75px; height: 786.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 21: API Management</em></span></p>
+</div>
+<div class="section" id="resources">
+<h5>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h5>
+<p>This section provides a list of all available API resources, collected
+in groups such as: Core, CMS, Custom API’s, (
+<a class="reference internal" href="#figure22"><span class="std std-ref">Figure 22: API Resources List</span></a>).</p>
+<p>They are presented in a table with the following columns:</p>
+<ul class="simple">
+<li>Resources</li>
+<li>Name</li>
+<li>List of HTTP methods for RESTful services for that resource:<ul>
+<li>GET</li>
+<li>POST</li>
+<li>PUT</li>
+<li>DELETE</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id31">
+<span id="figure22"></span><a class="reference internal image-reference" href="../../_images/image25.png"><img alt="API Resources List" src="../../_images/image25.png" style="width: 1421.25px; height: 777.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 22: API Resources List</em></span></p>
+</div>
+<p><strong>Edit resource configuration</strong></p>
+<p>By clicking on the resource’s name, you can edit that resource
+configuration (
+<a class="reference internal" href="#figure23"><span class="std std-ref">Figure 23: API Edit Resource Configuration</span></a>).</p>
+<p>The screen is divided into several areas:</p>
+<ul class="simple">
+<li>Information, presents information on the resource, and in particular:<ul>
+<li>Name (name of the resource)</li>
+<li>Namespace (its namespace i.e. /core)</li>
+<li>Description (description of the resource)</li>
+<li>Source (source of the resource, i.e. core)</li>
+<li>Plugins (the plugin to which the resource refers, if available)</li>
+<li>Resource URI (URI of the resource)</li>
+<li>Extension (XML, JSON extensions)</li>
+</ul>
+</li>
+<li>All methods options, from which can be set globally, for all defined
+methods, the following parameters<ul>
+<li>Active (set active ON/OFF)</li>
+<li>Hidden (set hidden ON/OFF)</li>
+<li>Authorization (set authorization for the resource from a drop-down
+list)</li>
+</ul>
+</li>
+</ul>
+<p>Settings for single methods, which are GET, POST, PUT, DELETE.</p>
+<ul class="simple">
+<li>GET: this area let you view and set parameters for only the GET
+method; it has an informative section, in which are presented the
+following parameters:<ul>
+<li>Method (Available/Active)</li>
+<li>Description (Description of the method)</li>
+<li>Visibility</li>
+<li>Authorization</li>
+<li>XML schemas</li>
+<li>Request parameters</li>
+<li>Active</li>
+<li>Hidden</li>
+<li>Authorization</li>
+</ul>
+</li>
+<li>POST: provides the same view of GET, but referred to the POST method</li>
+<li>PUT: provides the same view of GET, but referred to the PUT method</li>
+<li>DELETE: provides the same view of GET, but referred to the DELETE
+method</li>
+</ul>
+<p>Single method’s settings can also be accessed from the main API resource
+screen, by clicking on the method’s icon.</p>
+<div class="figure align-center" id="id32">
+<span id="figure23"></span><a class="reference internal image-reference" href="../../_images/image26.png"><img alt="API Edit Resource Configuration" src="../../_images/image26.png" style="width: 1425.75px; height: 783.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 23: API Edit Resource Configuration</em></span></p>
+</div>
+</div>
+<div class="section" id="services">
+<span id="index-11"></span><h5>Services<a class="headerlink" href="#services" title="Permalink to this headline">¶</a></h5>
+<p>From this subsection you can list the API services available in the
+system or add a new one.</p>
+<p>The list presents, (see
+<a class="reference internal" href="#figure24"><span class="std std-ref">Figure 24: API Services List</span></a>) in a table, grouped by API service
+type, the following parameters:</p>
+<ul class="simple">
+<li>Service</li>
+<li>Name</li>
+<li>Active</li>
+<li>Public</li>
+<li>Delete (deletes the API service)</li>
+</ul>
+<div class="figure align-center" id="id33">
+<span id="figure24"></span><a class="reference internal image-reference" href="../../_images/image27.png"><img alt="API Services List" src="../../_images/image27.png" style="width: 1433.25px; height: 321.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 24: API Services List</em></span></p>
+</div>
+<p>By clicking on the service, you can edit its settings, (see
+<a class="reference internal" href="#figure25"><span class="std std-ref">Figure 25: Edit API Service</span></a>), which are grouped into:</p>
+<ul class="simple">
+<li>Info</li>
+<li>Name (name of the service)</li>
+<li>Tag (tags for the service)</li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li>Active (active ON/OFF)</li>
+<li>Hidden (hidden ON/OFF)</li>
+</ul>
+<p>Authorization, sets authorizations on the service, in particular:</p>
+<ul class="simple">
+<li>Registered users (ON/OFF)</li>
+<li>Registered users with permission (sets the user’s permission on the
+resource, from a drop-down list of available options)</li>
+<li>Registered users belonging to the group (set permissions to all users
+belonging to a group, selectable from a drop-down list)</li>
+</ul>
+<p><strong>Parameters</strong></p>
+<p>The table lists all the parameters which characterize that API service
+with the following columns:</p>
+<ul class="simple">
+<li>Name (name of the parameter)</li>
+<li>Description</li>
+<li>Required</li>
+<li>Default</li>
+<li>Can be overridden</li>
+</ul>
+<div class="figure align-center" id="id34">
+<span id="figure25"></span><a class="reference internal image-reference" href="../../_images/image28.png"><img alt="Edit API Service" src="../../_images/image28.png" style="width: 1432.5px; height: 778.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 25: Edit API Service</em></span></p>
+</div>
+<p><strong>Create a new API Service</strong></p>
+<p>In creating a new API service you need to select, from the list of
+available methods, which new service will be based on, i.e. its master
+method.</p>
+<p>The new API service will inherit from the master method its defining
+parameters (see
+<a class="reference internal" href="#figure26"><span class="std std-ref">Figure 26: New API Service from API Method</span></a>).</p>
+<p>You will need to provide values to the following parameters; only some
+of them are mandatory.</p>
+<ul class="simple">
+<li>Info<ul>
+<li>Name (mandatory)</li>
+<li>Tag</li>
+</ul>
+</li>
+<li>Options<ul>
+<li>Active</li>
+<li>Hidden</li>
+</ul>
+</li>
+<li>Authorization<ul>
+<li>Registered users</li>
+<li>Registered users with permission</li>
+<li>Registered users belonging to the group</li>
+</ul>
+</li>
+<li>Parameters<ul>
+<li>Default</li>
+<li>Can be overridden</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id35">
+<span id="figure26"></span><a class="reference internal image-reference" href="../../_images/image29.png"><img alt="New API Service from API Method" src="../../_images/image29.png" style="width: 1431.75px; height: 778.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 26: New API Service from API Method</em></span></p>
+</div>
+</div>
+<div class="section" id="consumers">
+<h5>Consumers<a class="headerlink" href="#consumers" title="Permalink to this headline">¶</a></h5>
+<p>It let you manage the authorization of consumers to communicate with
+providers for authentication. It is based on OAUTH1.</p>
+<p>This view (
+<a class="reference internal" href="#figure27"><span class="std std-ref">Figure 27: API Consumers List</span></a>) shows a list of all defined API consumers
+and presents -in a table format- the following parameters:</p>
+<ul class="simple">
+<li>Key</li>
+<li>Name</li>
+<li>Number of tokens</li>
+<li>Actions<ul>
+<li>Edit (edit the consumer parameters)<ul>
+<li>Key</li>
+<li>Secret</li>
+<li>Name</li>
+<li>Expiration date</li>
+</ul>
+</li>
+<li>Delete (deletes the consumer)</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id36">
+<span id="figure27"></span><a class="reference internal image-reference" href="../../_images/image30.png"><img alt="API Consumers List" src="../../_images/image30.png" style="width: 1433.25px; height: 339.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 27: API Consumers List</em></span></p>
+</div>
+<p><strong>Edit an</strong> <strong>API Consumer</strong></p>
+<p>The editing functionality for the API Consumer is available from the
+kebab menu, from this view it is possible to change the defining
+parameters of the Consumer (see
+<a class="reference internal" href="#figure28"><span class="std std-ref">Figure 28: API Consumer Edit</span></a>).</p>
+<div class="figure align-center" id="id37">
+<span id="figure28"></span><a class="reference internal image-reference" href="../../_images/image31.png"><img alt="API Consumer Edit" src="../../_images/image31.png" style="width: 1428.75px; height: 388.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 28: API Consumer Edit</em></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="user-settings">
+<span id="id6"></span><h3>User Settings<a class="headerlink" href="#user-settings" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>User Settings</strong> section, (see
+<a class="reference internal" href="#figure29"><span class="std std-ref">Figure 29: Users Settings</span></a>), is the place from where
+all user management related activities can be performed and it is made up of subsections
+as shown below.</p>
+<ul class="simple">
+<li>User Settings<ul>
+<li>Users</li>
+<li>Profile Types</li>
+<li>User Restriction</li>
+<li>Roles</li>
+</ul>
+</li>
+</ul>
+<p>An Add button is also present, which let you add a new user.</p>
+<div class="figure align-center" id="id38">
+<span id="figure29"></span><a class="reference internal image-reference" href="../../_images/image32.png"><img alt="Users Settings" src="../../_images/image32.png" style="width: 238.5px; height: 785.25px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 29: Users Settings</em></span></p>
+</div>
+<div class="section" id="users">
+<h4>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h4>
+<p>Viewing a list of all users defined in the system is possible under the User subsection (
+<a class="reference internal" href="#figure30"><span class="std std-ref">Figure 30: Users List and Actions</span></a>).</p>
+<p>For every single user in the list it is shown:</p>
+<ul class="simple">
+<li>Username</li>
+<li>Full name</li>
+<li>Email</li>
+<li>Status</li>
+<li>Actions menu<ul>
+<li>Edit</li>
+<li>Manage authorizations</li>
+<li>Edit the profile of</li>
+<li>View the profile of</li>
+<li>Delete</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id39">
+<span id="figure30"></span><a class="reference internal image-reference" href="../../_images/image33.png"><img alt="Users List and Actions" src="../../_images/image33.png" style="width: 1280.25px; height: 194.25px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 30: Users List and Actions</em></span></p>
+</div>
+<p>The Edit functionality (
+<a class="reference internal" href="#figure31"><span class="std std-ref">Figure 31: Edit User</span></a>) let you change:</p>
+<ul class="simple">
+<li>Password</li>
+<li>User status to ON or OFF</li>
+</ul>
+<div class="figure align-center" id="id40">
+<span id="figure31"></span><a class="reference internal image-reference" href="../../_images/image34.png"><img alt="Edit User" src="../../_images/image34.png" style="width: 1284.75px; height: 391.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 31: Edit User</em></span></p>
+</div>
+<p>Manage Authorizations (
+<a class="reference internal" href="#figure32"><span class="std std-ref">Figure 32: User Authorizations</span></a>) let you change:</p>
+<ul class="simple">
+<li>Authorizations for the user:<ul>
+<li>User Group</li>
+<li>User Role</li>
+</ul>
+</li>
+</ul>
+<p>Refer to
+<a class="reference internal" href="../entandosections/usersettings/users-management.html#user-authorizations"><span class="std std-ref">Managing user authorizations</span></a>
+for details.</p>
+<div class="figure align-center" id="id41">
+<span id="figure32"></span><a class="reference internal image-reference" href="../../_images/image35.png"><img alt="User Authorizations" src="../../_images/image35.png" style="width: 1283.25px; height: 297.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 32: User Authorizations</em></span></p>
+</div>
+<p>From the Edit Profile action (
+<a class="reference internal" href="#figure33"><span class="std std-ref">Figure 33: Edit Profile of a User</span></a>) you change the
+attributes defined in the profile type:</p>
+<ul class="simple">
+<li>Full Name</li>
+<li>E-mail address</li>
+<li>Profile Type (change user’s profile type)</li>
+</ul>
+<div class="figure align-center" id="id42">
+<span id="figure33"></span><a class="reference internal image-reference" href="../../_images/image36.png"><img alt="Edit Profile of a User" src="../../_images/image36.png" style="width: 1283.25px; height: 312.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 33: Edit Profile of a User</em></span></p>
+</div>
+<p>The View Profile action (
+<a class="reference internal" href="#figure34"><span class="std std-ref">Figure 34: User Profile Details</span></a>) let you view, for the selected
+user, its profile parameters. In this case the user profile parameters
+are:</p>
+<ul class="simple">
+<li>Full Name</li>
+<li>E-mail address</li>
+</ul>
+<p>Please, note that the real parameters depend on which user profile users
+instantiate.</p>
+<div class="figure align-center" id="id43">
+<span id="figure34"></span><a class="reference internal image-reference" href="../../_images/image37.png"><img alt="User Profile Details" src="../../_images/image37.png" style="width: 1285.5px; height: 186.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 34: User Profile Details</em></span></p>
+</div>
+<p><strong>Add a new user to Entando</strong>.</p>
+<p>Refer also to
+<a class="reference internal" href="../entandosections/usersettings/users-management.html#add-new-user"><span class="std std-ref">Add a new user</span></a>
+for details.</p>
+<p>Adding a new user to the system, (see
+<a class="reference internal" href="#figure35"><span class="std std-ref">Figure 35: Add User</span></a>), can be performed by
+clicking on the Add button; you need to provide:</p>
+<ul class="simple">
+<li>Username (the name used to log in into Entando)</li>
+<li>Password (the user’s password needed to log in into Entando)</li>
+<li>Confirm Password</li>
+<li>Profile Type by selecting one from the drop-down list of the defined
+profile types.</li>
+</ul>
+<p>A default user profile is always present in the list, as it is needed to
+define the Admin’s user profile.</p>
+<div class="figure align-center" id="id44">
+<span id="figure35"></span><a class="reference internal image-reference" href="../../_images/image38.png"><img alt="Add User" src="../../_images/image38.png" style="width: 1284.0px; height: 387.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 35: Add User</em></span></p>
+</div>
+</div>
+<div class="section" id="profile-types">
+<h4>Profile Types<a class="headerlink" href="#profile-types" title="Permalink to this headline">¶</a></h4>
+<p>From the Profile Types, (see
+<a class="reference internal" href="#figure36"><span class="std std-ref">Figure 36:User Profile Types List</span></a>), you can manage the different
+user’s profiles defined in Entando or add a new User Profile.</p>
+<p>That subsection lists all available Profile Types showing for each one:</p>
+<ul class="simple">
+<li>Name</li>
+<li>Code</li>
+<li>Status</li>
+<li>Actions menu<ul>
+<li>Edit</li>
+<li>Reload</li>
+<li>Delete</li>
+</ul>
+</li>
+</ul>
+<p>(see
+<a class="reference internal" href="#figure37"><span class="std std-ref">Figure 37: Users Profile Types Actions</span></a>)</p>
+<div class="figure align-center" id="id45">
+<span id="figure36"></span><a class="reference internal image-reference" href="../../_images/image39.png"><img alt="User Profile Types List" src="../../_images/image39.png" style="width: 1433.25px; height: 274.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 36:User Profile Types List</em></span></p>
+</div>
+<div class="figure align-center" id="id46">
+<span id="figure37"></span><a class="reference internal image-reference" href="../../_images/image40.png"><img alt="Users Profile Types Actions" src="../../_images/image40.png" style="width: 1286.25px; height: 292.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 37: Users Profile Types Actions</em></span></p>
+</div>
+<p>From <strong>Edit</strong> you can change the name of the profile type, and change
+the set of attributes, which define that profile type.</p>
+<p>The attributes have:</p>
+<ul class="simple">
+<li>Code</li>
+<li>Type</li>
+<li>Roles</li>
+<li>Mandatory</li>
+<li>Filter</li>
+<li>Actions<ul>
+<li>Reload (makes changes effective, reloading the profile type)</li>
+<li>Delete (deletes the profile type)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Add a new profile type</strong></p>
+<p>When adding, (see
+<a class="reference internal" href="#figure38"><span class="std std-ref">Figure 38: Add User Profile</span></a>), a new profile type you will need to
+provide:</p>
+<ul class="simple">
+<li>Code</li>
+<li>Name</li>
+<li>Attributes</li>
+</ul>
+<div class="figure align-center" id="id47">
+<span id="figure38"></span><a class="reference internal image-reference" href="../../_images/image41.png"><img alt="Add User Profile" src="../../_images/image41.png" style="width: 1287.0px; height: 438.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 38: Add User Profile</em></span></p>
+</div>
+<p>Let’s say that a profile type describes the structure of a profile,
+defining what parameters characterize the profile, that is done
+assigning to that profile type, some attributes.</p>
+</div>
+<div class="section" id="user-restrictions">
+<span id="index-12"></span><h4>User Restrictions<a class="headerlink" href="#user-restrictions" title="Permalink to this headline">¶</a></h4>
+<p>From the User Restrictions subsection, (see
+<a class="reference internal" href="#figure39"><span class="std std-ref">Figure 39: User Restrictions</span></a>) you can
+activate and set access restrictions on the user, imposing:</p>
+<ul class="simple">
+<li>months availability since the last access</li>
+<li>months validity of the user password</li>
+</ul>
+<p>Selecting “Password always active” to both means no access limitation on
+the user.</p>
+<p>You can also enable: Enable Gravatar integration (Avatar of users)</p>
+<div class="figure align-center" id="id48">
+<span id="figure39"></span><a class="reference internal image-reference" href="../../_images/image42.png"><img alt="User Restrictions" src="../../_images/image42.png" style="width: 1284.75px; height: 399.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 39: User Restrictions</em></span></p>
+</div>
+</div>
+<div class="section" id="roles">
+<span id="index-13"></span><h4>Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h4>
+<p>Please also refer to
+<a class="reference internal" href="../entandosections/usersettings/users-management.html#add-user-roles"><span class="std std-ref">Users Roles</span></a>
+for additional information.</p>
+<p>This subsection shows a list of all available roles, (see
+<a class="reference internal" href="#figure40"><span class="std std-ref">Figure 40: Users Roles</span></a>),
+for every role it is shown:</p>
+<ul class="simple">
+<li>Name</li>
+<li>Code</li>
+<li>Actions Menu</li>
+</ul>
+<p>An add button is also present to add new roles.</p>
+<div class="figure align-center" id="id49">
+<span id="figure40"></span><a class="reference internal image-reference" href="../../_images/image43.png"><img alt="Users Roles" src="../../_images/image43.png" style="width: 1281.75px; height: 206.25px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 40: Users Roles</em></span></p>
+</div>
+<p><strong>Adding a new role</strong></p>
+<p>Please also refer to
+<a class="reference internal" href="../entandosections/usersettings/users-management.html#add-user-roles"><span class="std std-ref">Users Roles</span></a>
+for additional information.</p>
+<p>A role is a set of permissions. Users with a role inherit the permissions defined in the role. (see
+<a class="reference internal" href="#figure41"><span class="std std-ref">Figure 41: Add User Role</span></a>).</p>
+<p>In adding a new role, you need to provide:</p>
+<ul class="simple">
+<li>Name (limitations on names)</li>
+<li>Code (limitations on code)</li>
+<li>Permissions</li>
+</ul>
+<p>Preset permissions are:</p>
+<ul class="simple">
+<li>Content Editing</li>
+<li>User Profile Editing</li>
+<li>User Editing</li>
+<li>Access to Administration Area</li>
+<li>Operations on Categories</li>
+<li>Operations on Pages</li>
+<li>Operations on Resources</li>
+<li>View Users and Profiles</li>
+<li>Supervision of Contents</li>
+<li>All functions</li>
+</ul>
+<div class="figure align-center" id="id50">
+<span id="figure41"></span><a class="reference internal image-reference" href="../../_images/image44.png"><img alt="Add User Role" src="../../_images/image44.png" style="width: 1282.5px; height: 382.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 41: Add User Role</em></span></p>
+</div>
+<p><strong>Action menu on roles</strong></p>
+<p>Available actions are (see
+<a class="reference internal" href="#figure42"><span class="std std-ref">Figure 42: Actions on Roles</span></a>):</p>
+<ul class="simple">
+<li>Details</li>
+<li>Edit</li>
+<li>Delete</li>
+</ul>
+<div class="figure align-center" id="id51">
+<span id="figure42"></span><a class="reference internal image-reference" href="../../_images/image45.png"><img alt="Actions on Roles" src="../../_images/image45.png" style="width: 1284.75px; height: 162.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 42: Actions on Roles</em></span></p>
+</div>
+<p>From the details action (see
+<a class="reference internal" href="#figure43"><span class="std std-ref">Figure 43: User Roles Details</span></a>) you can get an overview of
+that role in particular:</p>
+<ul class="simple">
+<li>Group: (it is the group to which the role belongs)</li>
+<li>Name: (name of the Role)</li>
+<li>Permissions: permissions assigned to the role</li>
+<li>Referenced users: list of users to which that role is applied, this
+list shows in a table the following parameters:<ul>
+<li>Username</li>
+<li>Last login (date of the last login)</li>
+<li>Status (active or not)</li>
+<li>Actions: edit and manage authorizations for (let you manage
+authorizations for the user)</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id52">
+<span id="figure43"></span><a class="reference internal image-reference" href="../../_images/image46.png"><img alt="User Roles Details" src="../../_images/image46.png" style="width: 1281.0px; height: 235.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 43: User Roles Details</em></span></p>
+</div>
+</div>
+</div>
+<div class="section" id="apps">
+<span id="id7"></span><h3>APPS<a class="headerlink" href="#apps" title="Permalink to this headline">¶</a></h3>
+<p>APPS section shows all the applications installed in the system as
+plugins, (see
+<a class="reference internal" href="#figure44"><span class="std std-ref">Figure 44: APPS Menu</span></a>). A common application is the CMS (Content
+Management System), and it is installed by default.</p>
+<ul class="simple">
+<li>APPS<ul>
+<li>CMS</li>
+<li>IoT</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id53">
+<span id="figure44"></span><a class="reference internal image-reference" href="../../_images/image47.png"><img alt="APPS Menu" src="../../_images/image47.png" style="width: 239.25px; height: 783.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 44: APPS Menu</em></span></p>
+</div>
+<div class="section" id="cms">
+<h4>CMS<a class="headerlink" href="#cms" title="Permalink to this headline">¶</a></h4>
+<p>The CMS modules sports a set of functionalities that let you manage
+Contents, their types, and their model, and Digital Assets:</p>
+<ul class="simple">
+<li>CMS<ul>
+<li>Contents</li>
+<li>Digital Assets</li>
+<li>Content Types</li>
+<li>Content Models</li>
+<li>Content Settings</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id54">
+<span id="figure45"></span><a class="reference internal image-reference" href="../../_images/image48.png"><img alt="CMS Menu" src="../../_images/image48.png" style="width: 356.25px; height: 783.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 45: CMS Menu</em></span></p>
+</div>
+<div class="section" id="contents">
+<h5>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h5>
+<p>In the contents section: you have listed all contents defined in your
+Entando instance, (see
+<a class="reference internal" href="#figure46"><span class="std std-ref">Figure 46: Contents List</span></a>), search functionality is also
+available.</p>
+<p>Contents are listed in a table that shows the following parameters:</p>
+<ul class="simple">
+<li>Name</li>
+<li>Author</li>
+<li>Code</li>
+<li>Type</li>
+<li>Status</li>
+<li>Visibility</li>
+<li>Group</li>
+<li>Creation Date</li>
+<li>Actions<ul>
+<li>Copy/Paste</li>
+<li>Draft version</li>
+<li>Published version</li>
+<li>Edit</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id55">
+<span id="figure46"></span><a class="reference internal image-reference" href="../../_images/image49.png"><img alt="Contents List" src="../../_images/image49.png" style="width: 1284.0px; height: 584.25px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 46: Contents List</em></span></p>
+</div>
+<p><strong>Add an additional content</strong></p>
+<p>From the Content List view (see
+<a class="reference internal" href="#figure47"><span class="std std-ref">Figure 47: Add Content</span></a>) by pushing the button Add
+can create an additional content; a drop-down list will let you choose
+which Content Type, the additional content will instantiate.</p>
+<div class="figure align-center" id="id56">
+<span id="figure47"></span><a class="reference internal image-reference" href="../../_images/image50.png"><img alt="Add Content" src="../../_images/image50.png" style="width: 1272.0px; height: 131.25px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 47: Add Content</em></span></p>
+</div>
+<p>You will be asked to provide the information for the Content Attributes
+that define that Content Type; some of them could be mandatory, it
+depends on whether that attribute has been defined mandatory or not.
+Then the Content needs to be saved and published to make it available
+(see
+<a class="reference internal" href="#figure48"><span class="std std-ref">Figure 48: Filling content type attributes</span></a>).</p>
+<div class="figure align-center" id="id57">
+<span id="figure48"></span><a class="reference internal image-reference" href="../../_images/image51.png"><img alt="Filling content type attributes" src="../../_images/image51.png" style="width: 1304.25px; height: 782.25px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 48: Filling content type attributes</em></span></p>
+</div>
+<p>From the Content List, it is also possible to edit a Content (see
+<a class="reference internal" href="#figure49"><span class="std std-ref">Figure 49: Content Edit</span></a>). To do that access the Actions Menu of that content and
+select the Edit action. The newly added content needs to be saved and
+then published to make it available.</p>
+<div class="figure align-center" id="id58">
+<span id="figure49"></span><a class="reference internal image-reference" href="../../_images/image52.png"><img alt="Content Edit" src="../../_images/image52.png" style="width: 1338.75px; height: 771.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 49: Content Edit</em></span></p>
+</div>
+</div>
+<div class="section" id="digital-assets">
+<span id="index-14"></span><h5>Digital Assets<a class="headerlink" href="#digital-assets" title="Permalink to this headline">¶</a></h5>
+<p>This subsection provides the functionalities needed to manage Images and
+Attachments (see
+<a class="reference internal" href="#figure50"><span class="std std-ref">Figure 50: Digital Assets</span></a>).</p>
+<p>Images can be any image file of the supported types. Attachment can be
+any file type.</p>
+<p>New assets can be added by clicking on the Add button. While the
+possible actions on an already existing attachment could be Edit and
+Delete (see
+<a class="reference internal" href="#figure51"><span class="std std-ref">Figure 51: Digital Assets Actions</span></a>)</p>
+<div class="figure align-center" id="id59">
+<span id="figure50"></span><a class="reference internal image-reference" href="../../_images/image53.png"><img alt="Digital Assets" src="../../_images/image53.png" style="width: 1270.5px; height: 525.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 50: Digital Assets</em></span></p>
+</div>
+<div class="figure align-center" id="id60">
+<span id="figure51"></span><a class="reference internal image-reference" href="../../_images/image54.png"><img alt="Digital Assets Actions" src="../../_images/image54.png" style="width: 1271.25px; height: 481.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 51: Digital Assets Actions</em></span></p>
+</div>
+</div>
+<div class="section" id="content-types">
+<span id="index-15"></span><h5>Content Types<a class="headerlink" href="#content-types" title="Permalink to this headline">¶</a></h5>
+<p>Content Types are accessible from the Content Types section.</p>
+<p>In Content Types we have a list of all the Content Types defined in the
+Entando instance (see
+<a class="reference internal" href="#figure52"><span class="std std-ref">Figure 52: Content Types List</span></a>), the table shows:</p>
+<ul class="simple">
+<li>Name</li>
+<li>Code</li>
+<li>Status</li>
+<li>Actions</li>
+<li>Edit</li>
+<li>Reload</li>
+<li>Delete</li>
+</ul>
+<p>The available actions in this context are: Edit, Reload, Delete.</p>
+<p>From the Edit action you can edit/change the list of all attributes of
+that content type.</p>
+<p>From Reload, you can reload the configuration.</p>
+<p>From delete you can remove that content type from Entando.</p>
+<p>You cannot delete a content type if it is used in any content, you need
+to delete the contents to which that content type is referred, also in
+not possible to change the content type of an already defined content.</p>
+<div class="figure align-center" id="id61">
+<span id="figure52"></span><a class="reference internal image-reference" href="../../_images/image55.png"><img alt="Content Types List" src="../../_images/image55.png" style="width: 1267.5px; height: 338.25px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 52: Content Types List</em></span></p>
+</div>
+<p><strong>Add a Content Type</strong></p>
+<p>The Add button from the Content Type List view, let you add an
+additional Content Type, (see
+<a class="reference internal" href="#figure53"><span class="std std-ref">Figure 53: Add a Content Type</span></a>).</p>
+<p>You will be asked to provide:</p>
+<ul class="simple">
+<li>Code (mandatory)</li>
+<li>Name (mandatory)</li>
+<li>Attributes (selectable from a drop-down list)</li>
+</ul>
+<div class="figure align-center" id="id62">
+<span id="figure53"></span><a class="reference internal image-reference" href="../../_images/image56.png"><img alt="Add a Content Type" src="../../_images/image56.png" style="width: 1271.25px; height: 453.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 53: Add a Content Type</em></span></p>
+</div>
+<p><strong>Edit a Content Type</strong></p>
+<p>Edit functionalities, (see
+<a class="reference internal" href="#figure54"><span class="std std-ref">Figure 54: Edit Content Type</span></a>) are available from the three
+dots menu.</p>
+<p>From there it is possible to change:</p>
+<ul class="simple">
+<li>Name</li>
+<li>Default Content Model</li>
+<li>Default Content Model for List</li>
+<li>Attributes</li>
+</ul>
+<div class="figure align-center" id="id63">
+<span id="figure54"></span><a class="reference internal image-reference" href="../../_images/image57.png"><img alt="Edit Content Type" src="../../_images/image57.png" style="width: 1268.25px; height: 703.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 54: Edit Content Type</em></span></p>
+</div>
+</div>
+<div class="section" id="content-models">
+<h5>Content Models<a class="headerlink" href="#content-models" title="Permalink to this headline">¶</a></h5>
+<p>In the content models section, we get a list of all available Content
+Models defined in the Entando instance, (see
+<a class="reference internal" href="#figure55"><span class="std std-ref">Figure 55: Content Models List</span></a>), Contents Models are shown in a table, the following parameters are presented:</p>
+<ul class="simple">
+<li>Name</li>
+<li>Type</li>
+<li>Id</li>
+<li>Actions<ul>
+<li>Edit</li>
+<li>Delete</li>
+</ul>
+</li>
+</ul>
+<p>Available actions are: Edit and Delete (see
+<a class="reference internal" href="#figure56"><span class="std std-ref">Figure 56: Content Model Actions</span></a>).</p>
+<p>From edit (see
+<a class="reference internal" href="#figure57"><span class="std std-ref">Figure 57: Adding/Editing a Content Model</span></a>) you get access to the edit section of the
+Content Model, from which you can change:</p>
+<ul class="simple">
+<li>Type (from a drop-down list of available Content Types)</li>
+<li>Name</li>
+<li>Model (Velocity template)</li>
+<li>Style Sheet</li>
+</ul>
+<div class="figure align-center" id="id64">
+<span id="figure55"></span><a class="reference internal image-reference" href="../../_images/image58.png"><img alt="Content Models List" src="../../_images/image58.png" style="width: 1272.75px; height: 431.25px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 55: Content Models List</em></span></p>
+</div>
+<div class="figure align-center" id="id65">
+<span id="figure56"></span><a class="reference internal image-reference" href="../../_images/image59.png"><img alt="Content Model Actions" src="../../_images/image59.png" style="width: 1266.75px; height: 189.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 56: Content Model Actions</em></span></p>
+</div>
+<div class="figure align-center" id="id66">
+<span id="figure57"></span><a class="reference internal image-reference" href="../../_images/image60.png"><img alt="Adding/Editing a Content Model" src="../../_images/image60.png" style="width: 1272.0px; height: 622.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 57: Adding/Editing a Content Model</em></span></p>
+</div>
+</div>
+<div class="section" id="content-settings">
+<h5>Content Settings<a class="headerlink" href="#content-settings" title="Permalink to this headline">¶</a></h5>
+<p>From Content Settings subsection, (see
+<a class="reference internal" href="#figure58"><span class="std std-ref">Figure 58: Content Settings</span></a>) you can:</p>
+<ul class="simple">
+<li>Reload the references</li>
+<li>Reload the indexes</li>
+<li>Select the Editor</li>
+</ul>
+<div class="figure align-center" id="id67">
+<span id="figure58"></span><a class="reference internal image-reference" href="../../_images/image61.png"><img alt="Content Settings" src="../../_images/image61.png" style="width: 1271.25px; height: 242.25px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 58: Content Settings</em></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="settings">
+<span id="id8"></span><h3>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h3>
+<p>From this section, (see
+<a class="reference internal" href="#figure59"><span class="std std-ref">Figure 59: Settings</span></a>), you can access the Entando general
+duty functionalities, such as setting Categories, Labels, Configuration
+Reload, Database backup, file browsing and groups management.</p>
+<ul class="simple">
+<li>Settings<ul>
+<li>Categories</li>
+<li>Labels &amp; Languages</li>
+<li>Reload Configuration</li>
+<li>Database</li>
+<li>File Browser</li>
+<li>Groups</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center" id="id68">
+<span id="figure59"></span><a class="reference internal image-reference" href="../../_images/image68.png"><img alt="Settings" src="../../_images/image68.png" style="width: 239.25px; height: 783.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 59: Settings</em></span></p>
+</div>
+<div class="section" id="categories">
+<h4>Categories<a class="headerlink" href="#categories" title="Permalink to this headline">¶</a></h4>
+<p>This subsection shows a list of all available categories (see
+<a class="reference internal" href="#figure60"><span class="std std-ref">Figure 60: Categories List</span></a>) in a tree like structure. For every single category a menu gives you access to the following actions:</p>
+<ul class="simple">
+<li>Details</li>
+<li>Add</li>
+<li>Edit</li>
+<li>Delete</li>
+</ul>
+<p>From details (see
+<a class="reference internal" href="#figure61"><span class="std std-ref">Figure 61: Category Details</span></a>) you get a list of all contents with that
+category, in a table with the following columns:</p>
+<ul class="simple">
+<li>Name</li>
+<li>Code</li>
+<li>Type</li>
+<li>Last modified</li>
+</ul>
+<p><strong>Add a Category</strong></p>
+<p>A new category can be added by pushing the Add button, from the main
+view or by selecting the Add action from the kebab menu for the selected
+category, (see
+<a class="reference internal" href="#figure62"><span class="std std-ref">Figure 62: Add Categories</span></a>).</p>
+<p><strong>Edit a Category</strong></p>
+<p>The parameters of a Category can be edited accessing the Edit action
+from the kebab menu (see
+<a class="reference internal" href="#figure63"><span class="std std-ref">Figure 63: Edit Categories</span></a>). Note that only the Title can be
+changed.</p>
+<div class="figure align-center" id="id69">
+<span id="figure60"></span><a class="reference internal image-reference" href="../../_images/image69.png"><img alt="Categories List" src="../../_images/image69.png" style="width: 1284.0px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 60: Categories List</em></span></p>
+</div>
+<div class="figure align-center" id="id70">
+<span id="figure61"></span><a class="reference internal image-reference" href="../../_images/image70.png"><img alt="Category Details" src="../../_images/image70.png" style="width: 1282.5px; height: 348.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 61: Category Details</em></span></p>
+</div>
+<div class="figure align-center" id="id71">
+<span id="figure62"></span><a class="reference internal image-reference" href="../../_images/image71.png"><img alt="Add Categories" src="../../_images/image71.png" style="width: 1284.0px; height: 302.25px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 62: Add Categories</em></span></p>
+</div>
+<div class="figure align-center" id="id72">
+<span id="figure63"></span><a class="reference internal image-reference" href="../../_images/image72.png"><img alt="Edit Categories" src="../../_images/image72.png" style="width: 1283.25px; height: 237.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 63: Edit Categories</em></span></p>
+</div>
+</div>
+<div class="section" id="labels-and-languages">
+<h4>Labels and Languages<a class="headerlink" href="#labels-and-languages" title="Permalink to this headline">¶</a></h4>
+<p>From this subsection you can access Labels and Languages settings, (see
+<a class="reference internal" href="#figure64"><span class="std std-ref">Figure 64: Label and Languages</span></a>).</p>
+<p>The first tab, Languages, shows a list of all configured languages in
+the system, information is shown in a table with:</p>
+<ul class="simple">
+<li>Code</li>
+<li>Name</li>
+<li>Delete (action, let you delete the selected language)</li>
+</ul>
+<div class="figure align-center" id="id73">
+<span id="figure64"></span><a class="reference internal image-reference" href="../../_images/image73.png"><img alt="Label and Languages" src="../../_images/image73.png" style="width: 1433.25px; height: 234.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 64: Label and Languages</em></span></p>
+</div>
+<p><strong>System labels</strong></p>
+<p>Shows a list of all available system labels, (see
+<a class="reference internal" href="#figure65"><span class="std std-ref">Figure 65: System Labels</span></a>). They are
+labels that apply to the entire Entando application.</p>
+<p>Are shown in all configured languages, for each language they are
+accessible through its tab.</p>
+<p>Every single label shows:</p>
+<ul class="simple">
+<li>Code</li>
+<li>Language</li>
+<li>Actions (Edit, Delete)</li>
+</ul>
+<div class="figure align-center" id="id74">
+<span id="figure65"></span><a class="reference internal image-reference" href="../../_images/image74.png"><img alt="System Labels" src="../../_images/image74.png" style="width: 1301.25px; height: 705.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 65: System Labels</em></span></p>
+</div>
+</div>
+<div class="section" id="reload-configuration">
+<h4>Reload Configuration<a class="headerlink" href="#reload-configuration" title="Permalink to this headline">¶</a></h4>
+<p>From this section, (see
+<a class="reference internal" href="#figure66"><span class="std std-ref">Figure 66: Reload Configuration Success</span></a>), you can reload the Entando
+database system configuration.</p>
+<p>After successful reloading you will get the following message to confirm
+that result:</p>
+<p>“<strong>Success</strong>! The configuration has been reloaded”.</p>
+<div class="figure align-center" id="id75">
+<span id="figure66"></span><a class="reference internal image-reference" href="../../_images/image75.png"><img alt="Reload Configuration Success" src="../../_images/image75.png" style="width: 1296.75px; height: 282.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 66: Reload Configuration Success</em></span></p>
+</div>
+</div>
+<div class="section" id="database">
+<h4>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h4>
+<p>From this section you can back up the entire Entando’s database, by
+pushing the “Create Backup” button. The files of the backup are
+available from the File Browser section, please refer below, and anyway
+present in the file system (see
+<a class="reference internal" href="#figure67"><span class="std std-ref">Figure 67: Database Backup List</span></a>). A list of all available
+backups is visible in a table with the following information present:</p>
+<ul class="simple">
+<li>Ordinal Number</li>
+<li>Date</li>
+<li>Required time</li>
+<li>Delete option</li>
+</ul>
+<div class="figure align-center" id="id76">
+<span id="figure67"></span><a class="reference internal image-reference" href="../../_images/image76.png"><img alt="Database Backup List" src="../../_images/image76.png" style="width: 1284.75px; height: 159.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 67: Database Backup List</em></span></p>
+</div>
+</div>
+<div class="section" id="file-browser">
+<h4>File Browser<a class="headerlink" href="#file-browser" title="Permalink to this headline">¶</a></h4>
+<p>The File Browser subsection (see
+<a class="reference internal" href="#figure68"><span class="std std-ref">Figure 68: File Browser</span></a>) let you browse files,
+upload, create text files and folders in two distinct areas of the
+file-system:</p>
+<ul class="simple">
+<li>public: /project_name/src/main/webapp/resources</li>
+<li>protected: /project_name/src/main/webapp/protected</li>
+</ul>
+<p>That is specifically useful to make changes to the Entando front-end,
+i.e. css, javascript, images.</p>
+<div class="figure align-center" id="id77">
+<span id="figure68"></span><a class="reference internal image-reference" href="../../_images/image77.png"><img alt="File Browser" src="../../_images/image77.png" style="width: 1279.5px; height: 172.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 68: File Browser</em></span></p>
+</div>
+</div>
+<div class="section" id="groups">
+<h4>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h4>
+<p>In the Groups subsection you get access to user’s groups management
+activities:</p>
+<p>in tabled format, (see
+<a class="reference internal" href="#figure69"><span class="std std-ref">Figure 69: Groups List and Actions</span></a>), are listed all the defined User’s
+groups, with columns describing:</p>
+<ul class="simple">
+<li>Name</li>
+<li>Code</li>
+<li>Actions</li>
+</ul>
+<p>A new group can be also added from the provided Add button (see
+<a class="reference internal" href="#figure70"><span class="std std-ref">Figure 70: Groups Add</span></a>).</p>
+<p>The possible actions for Groups are:</p>
+<ul class="simple">
+<li>Details</li>
+<li>Edit</li>
+<li>Delete</li>
+</ul>
+<p>Details, (see
+<a class="reference internal" href="#figure71"><span class="std std-ref">Figure 71: Groups Details</span></a>), offer a tabbed view of:</p>
+<ul class="simple">
+<li>Pages</li>
+<li>Users</li>
+<li>Widget type</li>
+<li>Contents</li>
+<li>Resources</li>
+</ul>
+<p>that belong to that Group.</p>
+<p>From Edit it is possible to change the name of an existing Group only.</p>
+<p>From Delete you can delete the selected group. The Group cannot be
+deleted if it has any kind of resource assigned to that Group.</p>
+<div class="figure align-center" id="id78">
+<span id="figure69"></span><a class="reference internal image-reference" href="../../_images/image78.png"><img alt="Groups List and Actions" src="../../_images/image78.png" style="width: 1284.0px; height: 292.5px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 69: Groups List and Actions</em></span></p>
+</div>
+<div class="figure align-center" id="id79">
+<span id="figure70"></span><a class="reference internal image-reference" href="../../_images/image79.png"><img alt="Groups Add" src="../../_images/image79.png" style="width: 885.75px; height: 192.75px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 70: Groups Add</em></span></p>
+</div>
+<div class="figure align-center" id="id80">
+<span id="figure71"></span><a class="reference internal image-reference" href="../../_images/image80.png"><img alt="Groups Details" src="../../_images/image80.png" style="width: 1280.25px; height: 228.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 71: Groups Details</em></span></p>
+</div>
+<table class="docutils footnote" frame="void" id="id9" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[1]</a></td><td>Freemarker is a Java template engine.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/v431/adminconsole/adminconsole431.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><h3>Navigation</h3>
+<p>
+<a href="../../about.html" title="About">About</a><br>
+<a href="../../projects.html" title="Projects">Projects</a><br>
+<a href="../../documentation.html" title="Documentation">Documentation</a><br>
+<a href="../../faq.html" title="FAQ">FAQ</a><br>
+<a href="https://twitter.com/entando" title="Twitter">Twitter</a>
+</p>
+  <h3>Current Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Entando Admin Console Overview</a><ul>
+<li><a class="reference internal" href="#entando-admin-console-version-4-3-1">Entando Admin Console Version 4.3.1</a></li>
+<li><a class="reference internal" href="#id1">Admin Console</a><ul>
+<li><a class="reference internal" href="#dashboard">Dashboard</a></li>
+<li><a class="reference internal" href="#menu">Menu</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#admin-console-main-sections">Admin Console Main Sections</a><ul>
+<li><a class="reference internal" href="#page-designer">Page designer</a><ul>
+<li><a class="reference internal" href="#page-tree">Page Tree</a><ul>
+<li><a class="reference internal" href="#pages-s-actions">Pages’s Actions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#page-configuration">Page Configuration</a></li>
+<li><a class="reference internal" href="#page-settings">Page Settings</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ux-pattern">UX Pattern</a><ul>
+<li><a class="reference internal" href="#widgets">Widgets</a></li>
+<li><a class="reference internal" href="#fragments">Fragments</a></li>
+<li><a class="reference internal" href="#page-models">Page Models</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#integrations">Integrations</a><ul>
+<li><a class="reference internal" href="#components">Components</a></li>
+<li><a class="reference internal" href="#api-management">API Management</a><ul>
+<li><a class="reference internal" href="#resources">Resources</a></li>
+<li><a class="reference internal" href="#services">Services</a></li>
+<li><a class="reference internal" href="#consumers">Consumers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#user-settings">User Settings</a><ul>
+<li><a class="reference internal" href="#users">Users</a></li>
+<li><a class="reference internal" href="#profile-types">Profile Types</a></li>
+<li><a class="reference internal" href="#user-restrictions">User Restrictions</a></li>
+<li><a class="reference internal" href="#roles">Roles</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#apps">APPS</a><ul>
+<li><a class="reference internal" href="#cms">CMS</a><ul>
+<li><a class="reference internal" href="#contents">Contents</a></li>
+<li><a class="reference internal" href="#digital-assets">Digital Assets</a></li>
+<li><a class="reference internal" href="#content-types">Content Types</a></li>
+<li><a class="reference internal" href="#content-models">Content Models</a></li>
+<li><a class="reference internal" href="#content-settings">Content Settings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#settings">Settings</a><ul>
+<li><a class="reference internal" href="#categories">Categories</a></li>
+<li><a class="reference internal" href="#labels-and-languages">Labels and Languages</a></li>
+<li><a class="reference internal" href="#reload-configuration">Reload Configuration</a></li>
+<li><a class="reference internal" href="#database">Database</a></li>
+<li><a class="reference internal" href="#file-browser">File Browser</a></li>
+<li><a class="reference internal" href="#groups">Groups</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../entandosections/pagedesigner/index.html" title="Page Management"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../installation/installation.html" title="Environment Setup"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Entando 4.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../documentation.html" >Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../documentationv431.html" >Documentation Version 4.3.1</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Entando Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+    </div>
+  </body>
+</html>

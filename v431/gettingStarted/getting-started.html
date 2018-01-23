@@ -1,0 +1,417 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Getting Started &#8212; Entando 4.3 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Environment Setup" href="../installation/installation.html" />
+    <link rel="prev" title="Documentation Version 4.3.1" href="../documentationv431.html" /> 
+  </head>
+  <body>
+
+<table width="100%" style="width: 100%; background-color: white;">
+  <tr>
+    <td rowspan="2" style="padding: 10px 0px 10px 10px;">
+      <a href="../../index.html" title="Home"><img src="../../_static/banner.png" alt="Entando banner" border="0" /></a>
+    </td>
+    <td style="padding: 10px 10px 0px 0px; text-align: right; vertical-align: top;">
+      <a href="../../index.html" title="Home">Home</a>
+	<a href="https://www.entando.com/" title="Entando">Entando</a>
+      <a href="https://twitter.com/entando" title="Twitter">Twitter</a>
+      
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 0px 10px 0px 0px; text-align: right; vertical-align: bottom;">
+
+
+    </td>
+  </tr>
+</table>
+
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../installation/installation.html" title="Environment Setup"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../documentationv431.html" title="Documentation Version 4.3.1"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Entando 4.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../documentation.html" >Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../documentationv431.html" accesskey="U">Documentation Version 4.3.1</a> &#187;</li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>Start using Entando its easy, here below the guide to start using it.</p>
+<div class="section" id="environment-setup">
+<h2>Environment Setup<a class="headerlink" href="#environment-setup" title="Permalink to this headline">¶</a></h2>
+<p>To run a web application based on Entando v4.3.2 you need a system that
+meets the following hardware and software requirements.</p>
+<div class="section" id="hardware-configuration">
+<h3>Hardware Configuration<a class="headerlink" href="#hardware-configuration" title="Permalink to this headline">¶</a></h3>
+<p>The minimum hardware requirements are</p>
+<ul class="simple">
+<li>4 GB of RAM</li>
+<li>Dual core CPU ~ 2.2 Ghz</li>
+<li>~ 10 Gb of free space on disk (the vast majority of the disk space is
+for Maven dependencies)</li>
+</ul>
+</div>
+<div class="section" id="software-configuration">
+<h3>Software Configuration<a class="headerlink" href="#software-configuration" title="Permalink to this headline">¶</a></h3>
+<p>Entando is based on Java, so you can run it on any operating system,
+platform or architecture that supports a Java environment.</p>
+<p>Here below what you need to have installed on your system to run an Entando web application</p>
+<p><strong>Java Oracle JDK, version &gt;= 1.8</strong> (Entando has been tested with Oracle JDK up to jdk-8u151) <a class="footnote-reference" href="#id6" id="id1">[1]</a></p>
+<p>You can easily check your installed JDK version issuing the command</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ java -version
+</pre></div>
+</div>
+<p><strong>Maven, version &gt;= 3.5.0</strong> (Entando has been tested with Maven up to version v3.5.0) <a class="footnote-reference" href="#id7" id="id2">[2]</a></p>
+<p>Issue this command to check your version</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ mvn -version
+</pre></div>
+</div>
+<p><strong>Ant</strong>, version up to 1.10.1 (if you need a development ready
+environment) <a class="footnote-reference" href="#id8" id="id3">[3]</a></p>
+<p><strong>NOTE</strong>: Follow “Java Environment Setup” section, if you need any help
+on how to get a Java environment correctly set up, depending on your
+operating system.</p>
+<p class="rubric" id="run-the-entando-application">Run the Entando Application</p>
+<p>With JDK and Maven installed let’s start creating a new web application
+based on Entando bootstrap archetype. First create a new directory which
+will host the Entando project, move into that folder and issue the
+command</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ mvn archetype:generate -Dfilter=entando-archetype-portal-bootstrap
+</pre></div>
+</div>
+<p>you will be prompt for:</p>
+<ul class="simple">
+<li><strong>archetype</strong>: a list of archetypes corresponding to the supplied filter;</li>
+<li><strong>version</strong>: a list of versions, with the last one set as the default;</li>
+<li><strong>groupId</strong>: this is generally unique amongst an organization or a project (e.g. <em>mycompany</em>);</li>
+<li><strong>artifactId</strong>:  this is generally the name of the project you are going to create (e.g. <em>mysample</em>);</li>
+<li><strong>version</strong>:  this is the version of the project that is being built;</li>
+<li><strong>package</strong>: this is the package name where to place your project’s source code.</li>
+</ul>
+<p>For the archetype you will, generally, be presented with several
+projects’ choices, you can choose any of those typing the corresponding
+number; for the version, a list will be proposed to you, just choose
+one, typing its number or accept the default; for the others parameters
+you can insert bogus data.</p>
+<p>Maven will create a new folder named as your artifactId parameter entry.</p>
+<p>To start the project using the <em>Jetty</em> server, get into the newly
+created folder, where the .<em>pom</em> file resides and launch it issuing
+the command</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ mvn clean jetty:run
+</pre></div>
+</div>
+<p>Open your browser and point it to
+<a class="reference external" href="http://localhost:8080/">*http://localhost:8080/*</a></p>
+<p><strong>NOTE</strong>: Ignore the error and click on the link shown on that page.</p>
+<p>Log into the web application with <strong>username</strong>: <em>admin</em> and
+<strong>password</strong>: <em>adminadmin</em></p>
+<p>Java Environment Setup</p>
+<p>The Java Environment Setup may vary depending on your operating system,
+here some tips to help you in that task.</p>
+<div class="section" id="java-setup-on-os-x-10-9">
+<h4>Java Setup on OS X 10.9<a class="headerlink" href="#java-setup-on-os-x-10-9" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Download the Java JDK &gt;= 8 from the Oracle website and install the
+provided package</li>
+<li>Set the JAVA_HOME environment variable</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ echo &quot;export JAVA\_HOME=\\\`/usr/libexec/java\_home\\\`&quot; \| tee -a ~/.bash\_profile
+</pre></div>
+</div>
+<ul class="simple">
+<li>Install XCode from the App Store</li>
+<li>Install Homebrew <a class="footnote-reference" href="#id9" id="id4">[4]</a> or Macports <a class="footnote-reference" href="#id10" id="id5">[5]</a> (choose what you prefer)</li>
+<li>Run brew doctor and fix any warning you get from it</li>
+<li>Install Maven and Ant with Homebrew:</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ brew install maven
+$ brew install ant
+</pre></div>
+</div>
+</div>
+<div class="section" id="java-setup-on-linux">
+<h4>Java Setup on Linux<a class="headerlink" href="#java-setup-on-linux" title="Permalink to this headline">¶</a></h4>
+<p>The procedure is supposed to work with all major Linux distributions,
+although your mileage may vary depending on your specific distribution
+or settings.</p>
+<p>Let’s assume that Oracle Java is not installed, or you have OpenJDK
+installed on your system.</p>
+<ul class="simple">
+<li>Download jdk-8u151-linux-x64.tar.gz from Oracle site</li>
+<li>Download Apache maven apache-maven-3.5.0-bin.tar.gz from Apache site</li>
+<li>Download Apache Ant apache-ant-1.10.1-bin.tar.gz from Apache site</li>
+</ul>
+<p>We are going to install Oracle JDK, Maven and Ant into <em>/opt</em> directory.</p>
+<ul class="simple">
+<li>copy the jdk tarball into it</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ sudo cp jdk-8u151-linux-x64.tar.gz /opt/
+</pre></div>
+</div>
+<ul class="simple">
+<li>move into /opt and issue the following command to untar the packed
+JDK you have already copied there</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ sudo tar xvzf jdk-8u151-linux-x64.tar.gz
+</pre></div>
+</div>
+<ul class="simple">
+<li>copy the apache-maven-3.5.0-bin.tar.gz tarball into /opt and untar it</li>
+<li>copy the apache-ant-1.10.1-bin.tar.gz tarball into /opt and untar it</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ sudo cp apache-maven-3.5.0-bin.tar.gz /opt/
+$ sudo cp apache-ant-1.10.1-bin.tar.gz /opt/
+$ cd /opt/
+$ sudo tar xvfz apache-maven-3.5.0-bin.tar.gz
+$ sudo tar apache-ant-1.10.1-bin.tar.gz
+</pre></div>
+</div>
+<ul class="simple">
+<li>Now let’s set the PATH for Java, Maven and Ant and some Environment
+variables, globally, we will do that adding a new file in
+/etc/profile.d directory.</li>
+<li>Create a file named java_env.sh in /etc/profile.d, with the editor
+of your choice and with the following content</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>PATH=$PATH:/opt/jdk1.8.0\_151/bin:/opt/jdk1.8.0\_151/db/bin:/opt/jdk1.8.0\_151/jre/bin:/opt/apache-maven-3.5.0/bin:/opt/apache-ant-1.10.1/bin
+J2SDKDIR=/opt/jdk1.8.0\_151
+J2REDIR=/opt/jdk1.8.0\_151/jre
+JAVA\_HOME=/opt/jdk1.8.0\_151
+DERBY\_HOME=/opt/jdk1.8.0\_151/db
+export PATH;
+export J2SDKDIR;
+export J2REDIR;
+export JAVA\_HOME;
+export DERBY\_HOME;
+</pre></div>
+</div>
+<ul class="simple">
+<li>Save the file, log out and log in again.</li>
+<li>Enter the following commands to inform the system about Java’s
+location</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ sudo update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/opt/jdk1.8.0\_151/bin/java&quot; 0
+
+$ sudo update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/opt/jdk1.8.0\_151/bin/javac&quot; 0
+
+$ sudo update-alternatives --set java /opt/jdk1.8.0\_151/bin/java
+
+$ sudo update-alternatives --set javac /opt/jdk1.8.0\_151/bin/javac
+</pre></div>
+</div>
+<ul class="simple">
+<li>Check that java and javac point to the previous defined paths</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ update-alternatives --list java
+$ update-alternatives --list javac
+</pre></div>
+</div>
+<p>or</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ update-alternatives –list
+</pre></div>
+</div>
+<p>for RedHat derived Linux distributions.</p>
+<ul class="simple">
+<li>Than check the JDK with</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ java -version
+</pre></div>
+</div>
+<p>If you get the installed Oracle java version, you have done it right and
+the JDK is correctly installed.</p>
+<ul class="simple">
+<li>Also check whether Maven and Ant are available issuing the commands</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ mvn -version
+$ ant -version
+</pre></div>
+</div>
+<p>If you get an answer Java is now correctly set up to run an Entando
+project or start working with it.</p>
+<p>Note that for some environments (Linux distributions, Window Managers),
+the environment variables won’t be visible in a graphical terminal, in
+this case, adding the same script java_env.sh to the directory
+/etc/X11/Xsession.d/ will do the trick.</p>
+</div>
+<div class="section" id="java-setup-on-windows">
+<h4>Java Setup on Windows<a class="headerlink" href="#java-setup-on-windows" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Install Java JDK &gt;= 1.8</li>
+</ul>
+<p>Download and install the .exe installer Download and install the .exe
+installer
+<a class="reference external" href="javascript:void(0)">j</a><a class="reference external" href="javascript:void(0)">dk-8u151-windows-x64.exe</a></p>
+<ul class="simple">
+<li>Create the environment variable</li>
+</ul>
+<blockquote>
+<div>JAVA_HOME -&gt; C:\Program Files\Java\jdk1.8.0_151</div></blockquote>
+<ul class="simple">
+<li>Install Maven</li>
+</ul>
+<blockquote>
+<div>apache-maven-3.5.0-bin</div></blockquote>
+<ul class="simple">
+<li>Set the Maven environment variable</li>
+</ul>
+<blockquote>
+<div>MVN_HOME -&gt; C:\Program Files\apache-maven-3.5.0</div></blockquote>
+<ul class="simple">
+<li>Install Ant</li>
+</ul>
+<blockquote>
+<div>apache-ant-1.10.1-bin</div></blockquote>
+<ul class="simple">
+<li>Set the Ant environment variable</li>
+</ul>
+<p>ANT_HOME -&gt; C:\Program Files\apache-ant-1.10.1</p>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td><a class="reference external" href="http://maven.apache.org/download.cgi">http://maven.apache.org/download.cgi</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td><a class="reference external" href="http://ant.apache.org/bindownload.cgi">http://ant.apache.org/bindownload.cgi</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id9" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[4]</a></td><td><a class="reference external" href="https://brew.sh/">https://brew.sh/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id10" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[5]</a></td><td><a class="reference external" href="https://www.macports.org/">https://www.macports.org/</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/v431/gettingStarted/getting-started.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><h3>Navigation</h3>
+<p>
+<a href="../../about.html" title="About">About</a><br>
+<a href="../../projects.html" title="Projects">Projects</a><br>
+<a href="../../documentation.html" title="Documentation">Documentation</a><br>
+<a href="../../faq.html" title="FAQ">FAQ</a><br>
+<a href="https://twitter.com/entando" title="Twitter">Twitter</a>
+</p>
+  <h3>Current Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Getting Started</a><ul>
+<li><a class="reference internal" href="#environment-setup">Environment Setup</a><ul>
+<li><a class="reference internal" href="#hardware-configuration">Hardware Configuration</a></li>
+<li><a class="reference internal" href="#software-configuration">Software Configuration</a><ul>
+<li><a class="reference internal" href="#java-setup-on-os-x-10-9">Java Setup on OS X 10.9</a></li>
+<li><a class="reference internal" href="#java-setup-on-linux">Java Setup on Linux</a></li>
+<li><a class="reference internal" href="#java-setup-on-windows">Java Setup on Windows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../installation/installation.html" title="Environment Setup"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../documentationv431.html" title="Documentation Version 4.3.1"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Entando 4.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../documentation.html" >Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../documentationv431.html" >Documentation Version 4.3.1</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Entando Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+    </div>
+  </body>
+</html>

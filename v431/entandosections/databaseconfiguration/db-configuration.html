@@ -1,0 +1,212 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Database Configuration &#8212; Entando 4.3 documentation</title>
+    <link rel="stylesheet" href="../../../_static/sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="UX Pattern" href="../uxpattern/index.html" />
+    <link rel="prev" title="Database Configuration" href="index.html" /> 
+  </head>
+  <body>
+
+<table width="100%" style="width: 100%; background-color: white;">
+  <tr>
+    <td rowspan="2" style="padding: 10px 0px 10px 10px;">
+      <a href="../../../index.html" title="Home"><img src="../../../_static/banner.png" alt="Entando banner" border="0" /></a>
+    </td>
+    <td style="padding: 10px 10px 0px 0px; text-align: right; vertical-align: top;">
+      <a href="../../../index.html" title="Home">Home</a>
+	<a href="https://www.entando.com/" title="Entando">Entando</a>
+      <a href="https://twitter.com/entando" title="Twitter">Twitter</a>
+      
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 0px 10px 0px 0px; text-align: right; vertical-align: bottom;">
+
+
+    </td>
+  </tr>
+</table>
+
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../uxpattern/index.html" title="UX Pattern"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Database Configuration"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Entando 4.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../documentation.html" >Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../documentationv431.html" >Documentation Version 4.3.1</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" accesskey="U">Database Configuration</a> &#187;</li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="database-configuration">
+<h1>Database Configuration<a class="headerlink" href="#database-configuration" title="Permalink to this headline">¶</a></h1>
+<p>By default Entando is configured to use Apache Derby database.
+To use another database the following changes need to be applied:</p>
+<p>In the folder src/main/filters edit the appropriate file for your environment and deployment, for example in a developement environment on Unix sistems you need to edit the filter-development-unix.properties file.</p>
+<p>Open the file with a text editor, locate the part in the file marked as <strong>Database Configuration: DERBY</strong> and comment out all the section lines, this part should look like the following:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="c1"># --------------------- Database Configuration: DERBY ---------------------</span>
+<span class="c1">#profile.database.hostname=localhost</span>
+<span class="c1">#profile.database.port=1527</span>
+<span class="c1">#profile.database.username=agile</span>
+<span class="c1">#profile.database.password=agile</span>
+
+<span class="c1">#usually no need to change the following group of 3 properties:</span>
+<span class="c1">#profile.database.driverClassName=org.apache.derby.jdbc.EmbeddedDriver</span>
+<span class="c1">#profile.database.url.portdb=jdbc:derby:${project.build.directory}/derby/production/${profile.application.name}#Port;create=true</span>
+<span class="c1">#profile.database.url.servdb=jdbc:derby:${project.build.directory}/derby/production/${profile.application.name}#Serv;create=true</span>
+</pre></div>
+</div>
+<p>find the part which refers to you database es. MySQL and uncomment the lines as shown below and set the parameters according to your db configuration</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span># --------------------- Database Configuration: MySQL ---------------------
+profile.database.hostname=localhost
+profile.database.port=3306
+profile.database.username=agile
+profile.database.password=agile
+
+#usually no need to change the following group of 3 properties:
+profile.database.driverClassName=com.mysql.jdbc.Driver
+profile.database.url.portdb=jdbc:mysql://${profile.database.hostname}:${profile.database.port}/${profile.application.name}Port
+profile.database.url.servdb=jdbc:mysql://${profile.database.hostname}:${profile.database.port}/${profile.application.name}Serv
+</pre></div>
+</div>
+<ul class="simple">
+<li>Save the file</li>
+</ul>
+<p>Open the pom.xml file with a text editor and comment the lines which refer to Derby properties and uncomment the part which refers to MySQL, the file should look like the following:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>&lt;test.database.driver&gt;com.mysql.jdbc.Driver&lt;/test.database.driver&gt;
+&lt;test.database.hostname&gt;localhost&lt;/test.database.hostname&gt;
+&lt;test.database.port&gt;3306&lt;/test.database.port&gt;
+&lt;test.database.username&gt;root&lt;/test.database.username&gt;
+&lt;test.database.password&gt;agile&lt;/test.database.password&gt;
+&lt;test.database.port.url&gt;jdbc:mysql://${test.database.hostname}:${test.database.port}/${project.artifactId}testPort&lt;/test.database.port.url&gt;
+&lt;test.database.serv.url&gt;jdbc:mysql://${test.database.hostname}:${test.database.port}/${project.artifactId}testServ&lt;/test.database.serv.url&gt;
+
+&lt;!--
+&lt;test.database.driver&gt;org.apache.derby.jdbc.EmbeddedDriver&lt;/test.database.driver&gt;
+&lt;test.database.hostname&gt;localhost&lt;/test.database.hostname&gt;
+&lt;test.database.port&gt;1527&lt;/test.database.port&gt;
+&lt;test.database.username&gt;agile&lt;/test.database.username&gt;
+&lt;test.database.password&gt;agile&lt;/test.database.password&gt;
+&lt;test.database.port.url&gt;jdbc:derby:${project.build.directory}/test/db/${project.artifactId}testPort;create=true&lt;/   test.database.port.url&gt;
+&lt;test.database.serv.url&gt;jdbc:derby:${project.build.directory}/test/db/${project.artifactId}testServ;create=true&lt;/test.database.serv.url&gt;
+--&gt;
+</pre></div>
+</div>
+<p>Then uncomment the dependency part of the file</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+             <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">mysql</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+             <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">mysql</span><span class="o">-</span><span class="n">connector</span><span class="o">-</span><span class="n">java</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+              <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="mf">5.1</span><span class="o">.</span><span class="mi">18</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Save the file</li>
+</ul>
+<p>Create two databases in you dbms, the database names are strings composed by your project name and Port without any space and your project name and Serv without any space as shown below:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">create</span> <span class="n">database</span> <span class="n">project</span><span class="o">-</span><span class="n">namePort</span>
+<span class="n">create</span> <span class="n">database</span> <span class="n">project</span><span class="o">-</span><span class="n">nameServ</span>
+</pre></div>
+</div>
+<p>issue the command</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">mvn</span> <span class="n">clean</span> <span class="n">jetty</span><span class="p">:</span><span class="n">run</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/v431/entandosections/databaseconfiguration/db-configuration.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><h3>Navigation</h3>
+<p>
+<a href="../../../about.html" title="About">About</a><br>
+<a href="../../../projects.html" title="Projects">Projects</a><br>
+<a href="../../../documentation.html" title="Documentation">Documentation</a><br>
+<a href="../../../faq.html" title="FAQ">FAQ</a><br>
+<a href="https://twitter.com/entando" title="Twitter">Twitter</a>
+</p>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../uxpattern/index.html" title="UX Pattern"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Database Configuration"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Entando 4.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../documentation.html" >Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../documentationv431.html" >Documentation Version 4.3.1</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" >Database Configuration</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Entando Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,274 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Pages and their Management &#8212; Entando 4.3 documentation</title>
+    <link rel="stylesheet" href="../../../_static/sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="CMS" href="../apps/index.html" />
+    <link rel="prev" title="Page Management" href="index.html" /> 
+  </head>
+  <body>
+
+<table width="100%" style="width: 100%; background-color: white;">
+  <tr>
+    <td rowspan="2" style="padding: 10px 0px 10px 10px;">
+      <a href="../../../index.html" title="Home"><img src="../../../_static/banner.png" alt="Entando banner" border="0" /></a>
+    </td>
+    <td style="padding: 10px 10px 0px 0px; text-align: right; vertical-align: top;">
+      <a href="../../../index.html" title="Home">Home</a>
+	<a href="https://www.entando.com/" title="Entando">Entando</a>
+      <a href="https://twitter.com/entando" title="Twitter">Twitter</a>
+      
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 0px 10px 0px 0px; text-align: right; vertical-align: bottom;">
+
+
+    </td>
+  </tr>
+</table>
+
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../apps/index.html" title="CMS"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Page Management"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Entando 4.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../documentation.html" >Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../documentationv431.html" >Documentation Version 4.3.1</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" accesskey="U">Page Management</a> &#187;</li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pages-and-their-management">
+<span id="page-management"></span><h1>Pages and their Management<a class="headerlink" href="#pages-and-their-management" title="Permalink to this headline">¶</a></h1>
+<p>Pages are fundamental items to build your web application by using the Page Designer.
+The Page Designer is a tool, in the Admin Console, to create, edit and configure Pages.</p>
+<div class="section" id="add-new-pages">
+<span id="add-new-page"></span><span id="index-0"></span><h2>Add new pages<a class="headerlink" href="#add-new-pages" title="Permalink to this headline">¶</a></h2>
+<p>This functionality can be accessed from the Page tree view, (see
+<a class="reference internal" href="../../adminconsole/adminconsole431.html#figure7"><span class="std std-ref">Figure 7: Add a Page</span></a>), through the Add button; in that case you need to select its
+hierarchical placement afterwards. Another way to add a new page is to
+select the Add action, for a page, from its kebab menu; in this case
+your new page will be a daughter of the selected page.</p>
+<p>A page is characterized by the following main paramenters:</p>
+<ul class="simple">
+<li>Code (unique identifier of the page)</li>
+<li>Title (description of the page)</li>
+<li>Page Placement (its hierarchical placement)</li>
+<li>Owner Group (the group which owns the page)</li>
+<li>Join Group (additional groups which have access rights on the page)</li>
+<li>Page Model (the model the page implements)</li>
+<li>Other Settings</li>
+</ul>
+<p>Let’s describe in some detail how to add a new page:</p>
+<p><strong>Step 1</strong>. Go to Page Designer &gt;&gt; Page Tree</p>
+<p><strong>Step 2</strong>. Decide the hierarchical placement of the page, selecting an
+already present page, or you will be asked for that afterwards.</p>
+<p><strong>Step 3</strong>. Provide a title and a code in the Info section, provide
+also, selecting them from the dropdown menus, an Owner Group and a Join
+Group in the Page groups section, then select a page model from the
+available models. Then click “Save and Configure”.</p>
+<p><strong>Step 4</strong>. You will be brought to the configuration section, where are
+listed all the frames defined in the page model you associated to that
+page. Now you can add the widgets, available on the right-hand side of
+the screen, to the page, by dragging and dropping them in the desired
+frame, this will be better explained in the “Configure a page” section
+below.</p>
+<p><strong>Step 5</strong>. Click on the PUBLISH and then the PREVIEW button to see the modified Page</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A page can be access from the url project-name/en/page-name.page where the project name is the name of the Entando project and the page name is the  name of the page name.
+To make the page accessible from some menu you need to configure it.</p>
+</div>
+</div>
+<div class="section" id="edit-a-page">
+<h2>Edit a page<a class="headerlink" href="#edit-a-page" title="Permalink to this headline">¶</a></h2>
+<p>This action refers to an already present page. The edit page view is
+divided into sections (
+<a class="reference internal" href="../../adminconsole/adminconsole431.html#figure8"><span class="std std-ref">Figure 8: Edit a Page</span></a>):</p>
+<ul class="simple">
+<li>Info</li>
+<li>Title (title of the page, mandatory)</li>
+<li>Code (code of the page, assigned automatically, not changeable)</li>
+<li>Page groups<ul>
+<li>Owner Group (owner of the page, assigned at creation time, and not
+changeable)</li>
+<li>Join Group (group to join, selectable from a drop-down list of
+available groups)</li>
+</ul>
+</li>
+<li>Settings<ul>
+<li>Page Model (the model of the page, mandatory)</li>
+<li>Displayed in menu (set whether it must be displayed in menu or
+not, settable to On or Off)</li>
+<li>SEO (Search Engine Optimization, set whether it must be optimized
+for Search Engine, settable to On or Off)</li>
+<li>Charset (selectable between available charset, i.e. utf8,
+iso-88591)</li>
+<li>Mime Type (identifies the type of information, namely text/html,
+application/JSON, and so forth)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="configure-a-page">
+<h2>Configure a page<a class="headerlink" href="#configure-a-page" title="Permalink to this headline">¶</a></h2>
+<p>In the page configuration section, you can assign available widgets to
+the frames in the page. The page model defines the available frames or
+in other words the page’s layout. The available Widgets are listed from
+a Widgets list on the right-hand side of the screen. You can drag
+widgets and drop them in a frame of your choice, how it’s showed in the
+<a class="reference internal" href="../../adminconsole/adminconsole431.html#figure9"><span class="std std-ref">Figure 9: Frames in a page</span></a> and
+<a class="reference internal" href="../../adminconsole/adminconsole431.html#figure10"><span class="std std-ref">Figure 10: Drag and Drop Widgets to Frames</span></a>.</p>
+<ul class="simple">
+<li>Click SAVE AND CONFIGURE button.</li>
+<li>Click on the PUBLISH and then the PREVIEW button to see the modified Page.</li>
+</ul>
+</div>
+<div class="section" id="add-a-content-to-a-page">
+<h2>Add a Content to a page<a class="headerlink" href="#add-a-content-to-a-page" title="Permalink to this headline">¶</a></h2>
+<p>To add an already defined content to a page you need to follow this process:</p>
+<ul class="simple">
+<li>select the page where you want to add the content</li>
+<li>identify the frame in which you want to add the new content</li>
+<li>drag and drop the <strong>Contents-Publish a content</strong> widget from the list of available CMS widgets</li>
+</ul>
+<p>you will be brought into a page from which you need to:</p>
+<ul class="simple">
+<li>choose the content from the list of available contents</li>
+<li>push the confirm button</li>
+<li>change if you need the content model in the publishing  settings section.</li>
+<li>click on the save button</li>
+<li>publish the content</li>
+<li>click on preview button to preview the page</li>
+</ul>
+</div>
+<div class="section" id="delete-a-page">
+<h2>Delete a page<a class="headerlink" href="#delete-a-page" title="Permalink to this headline">¶</a></h2>
+<p>This action removes the page; please note that pages with dependent
+pages cannot be deleted.</p>
+</div>
+<div class="section" id="page-status">
+<h2>Page Status<a class="headerlink" href="#page-status" title="Permalink to this headline">¶</a></h2>
+<p>The page status can be:
+<a class="reference internal" href="#page-management-figure1"><span class="std std-ref">Figure 1: Page Status</span></a></p>
+<ul class="simple">
+<li>draft of an unpublished page (gray bullet)</li>
+<li>online (green bullet)</li>
+<li>draft of an online page (yellow bullet)</li>
+</ul>
+<div class="figure align-center" id="id1">
+<span id="page-management-figure1"></span><a class="reference internal image-reference" href="../../../_images/page-status.png"><img alt="Page Status" src="../../../_images/page-status.png" style="width: 139.0px; height: 255.0px;" /></a>
+<p class="caption"><span class="caption-text"><em>Figure 1: Page Status</em></span></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/v431/entandosections/pagedesigner/page-management.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><h3>Navigation</h3>
+<p>
+<a href="../../../about.html" title="About">About</a><br>
+<a href="../../../projects.html" title="Projects">Projects</a><br>
+<a href="../../../documentation.html" title="Documentation">Documentation</a><br>
+<a href="../../../faq.html" title="FAQ">FAQ</a><br>
+<a href="https://twitter.com/entando" title="Twitter">Twitter</a>
+</p>
+  <h3>Current Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Pages and their Management</a><ul>
+<li><a class="reference internal" href="#add-new-pages">Add new pages</a></li>
+<li><a class="reference internal" href="#edit-a-page">Edit a page</a></li>
+<li><a class="reference internal" href="#configure-a-page">Configure a page</a></li>
+<li><a class="reference internal" href="#add-a-content-to-a-page">Add a Content to a page</a></li>
+<li><a class="reference internal" href="#delete-a-page">Delete a page</a></li>
+<li><a class="reference internal" href="#page-status">Page Status</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../apps/index.html" title="CMS"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Page Management"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Entando 4.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../documentation.html" >Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../documentationv431.html" >Documentation Version 4.3.1</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" >Page Management</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Entando Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+    </div>
+  </body>
+</html>

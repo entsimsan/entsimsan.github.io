@@ -1,0 +1,302 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Environment Setup &#8212; Entando 4.3 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Entando Admin Console Overview" href="../adminconsole/adminconsole431.html" />
+    <link rel="prev" title="Getting Started" href="../gettingStarted/getting-started.html" /> 
+  </head>
+  <body>
+
+<table width="100%" style="width: 100%; background-color: white;">
+  <tr>
+    <td rowspan="2" style="padding: 10px 0px 10px 10px;">
+      <a href="../../index.html" title="Home"><img src="../../_static/banner.png" alt="Entando banner" border="0" /></a>
+    </td>
+    <td style="padding: 10px 10px 0px 0px; text-align: right; vertical-align: top;">
+      <a href="../../index.html" title="Home">Home</a>
+	<a href="https://www.entando.com/" title="Entando">Entando</a>
+      <a href="https://twitter.com/entando" title="Twitter">Twitter</a>
+      
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 0px 10px 0px 0px; text-align: right; vertical-align: bottom;">
+
+
+    </td>
+  </tr>
+</table>
+
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../adminconsole/adminconsole431.html" title="Entando Admin Console Overview"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../gettingStarted/getting-started.html" title="Getting Started"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Entando 4.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../documentation.html" >Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../documentationv431.html" accesskey="U">Documentation Version 4.3.1</a> &#187;</li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="environment-setup">
+<h1>Environment Setup<a class="headerlink" href="#environment-setup" title="Permalink to this headline">¶</a></h1>
+<p>In order to develop and build from the last source code of Entando, you
+need the following hardware and software configurations.</p>
+<div class="section" id="hardware-configuration">
+<h2>Hardware Configuration<a class="headerlink" href="#hardware-configuration" title="Permalink to this headline">¶</a></h2>
+<p>The minimum hardware requirements are:</p>
+<ul class="simple">
+<li>4 GB of RAM</li>
+<li>Dual core CPU ~ 2.2 Ghz</li>
+<li>~ 10Gb of free space on disk (the vast majority of the disk space is
+for Maven dependencies)</li>
+</ul>
+</div>
+<div class="section" id="software-configuration">
+<h2>Software Configuration<a class="headerlink" href="#software-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Entando is based on Java, so you can run it on any operating system,
+platform or architecture that supports a Java environment.</p>
+<p>Here below what you need to have installed on your system to run an
+Entando web application:</p>
+<p><strong>Java Oracle JDK, version &gt;= 7</strong> (Entando has been tested with Oracle JDK up to jdk-8u151) <a class="footnote-reference" href="#id4" id="id1">[1]</a></p>
+<p>You can easily check your installed JDK version issuing the command:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ java -version
+</pre></div>
+</div>
+<p><strong>Maven, version &gt;= 2.2.1</strong> (Entando has been tested with Maven up to version v3.5.0) <a class="footnote-reference" href="#id5" id="id2">[2]</a></p>
+<p>Issue this command to check your version:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ mvn -version
+</pre></div>
+</div>
+<p><strong>Ant</strong>, version up to 1.10.1 (if you need a development ready environment) <a class="footnote-reference" href="#id6" id="id3">[3]</a></p>
+<p><strong>NOTE</strong>: see the “<strong>Getting Started</strong>” document for more
+information details about the environment setup</p>
+</div>
+</div>
+<div class="section" id="build-from-the-source-code">
+<h1>Build From the Source Code<a class="headerlink" href="#build-from-the-source-code" title="Permalink to this headline">¶</a></h1>
+<p>To develop a web application based on Entando or to build Entando you
+need to install the following open source projects:</p>
+<ul class="simple">
+<li><strong>entando-core</strong>, provides the basic structure, functionality, and
+services to build an instance of an Entando application. The project
+is available in the Github repository at the following link
+<a class="reference external" href="https://github.com/entando/entando-core">https://github.com/entando/entando-core</a></li>
+<li><strong>entando-components</strong>, provides software components that extend the
+basic functionality of the core platform. The project is available in
+the Github repository at the following link
+<a class="reference external" href="https://github.com/entando/entando-components">https://github.com/entando/entando-components</a></li>
+<li><strong>entando-archetypes</strong>, provides original pattern/models from which
+building other Entando applications or projects. The project is
+available in the Github repository at the following link
+<a class="reference external" href="https://github.com/entando/entando-archetypes">https://github.com/entando/entando-archetypes</a>.</li>
+</ul>
+<div class="section" id="download-the-projects">
+<h2>Download the projects<a class="headerlink" href="#download-the-projects" title="Permalink to this headline">¶</a></h2>
+<p>To download the last source code version of the projects</p>
+<ul class="simple">
+<li>Open your terminal</li>
+<li>Create an empty directory for your project</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ mkdir ~/my_new_project
+</pre></div>
+</div>
+<ul class="simple">
+<li>Move to a directory of your choice</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ cd ~/my_new_project
+</pre></div>
+</div>
+<ul class="simple">
+<li>Clone in the following sequence entando-core, entando-components,
+entando-archetypes projects</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>-  $ git clone https://github.com/entando/entando-core
+
+-  $ git clone https://github.com/entando/entando-components
+
+-  $ git clone https://github.com/entando/entando-archetypes
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-the-projects">
+<h2>Install the projects<a class="headerlink" href="#install-the-projects" title="Permalink to this headline">¶</a></h2>
+<p>In order to build from the last source code version of the Entando, you
+should to</p>
+<ul class="simple">
+<li>Install, in the following sequence, entando-core, entando-components,
+and entando-archetypes projects</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ cd entando-core
+$ mvn clean install –DskipTests
+</pre></div>
+</div>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ cd entando-components
+$ mvn clean install –DskipTests
+</pre></div>
+</div>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ cd entando-archetypes
+$ mvn clean install -DskipTests
+</pre></div>
+</div>
+<ul class="simple">
+<li>Create an empty directory and generate a test web application, for
+instance, based on the Entando bootstrap archetype, and type bogus
+data when asked</li>
+</ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ mvn archetype:generate -Dfilter=entando-archetype-portal-bootstrap
+</pre></div>
+</div>
+<p>Otherwise, if you want to enjoy with a ready application sample, you can
+clone (e.g. in the same directory ~/my_new_project) and then run an
+application included in the entando ux-packages</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ git clone https://github.com/entando/entando-ux-packages
+$ cd entando-ux-packages
+$ cd XXXXXXXXXX
+</pre></div>
+</div>
+<p>and run the jetty server with:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ mvn clean jetty:run
+</pre></div>
+</div>
+<p>Finally:</p>
+<ul class="simple">
+<li>Open your browser at
+<a class="reference external" href="http://localhost:8080/">*http://localhost:8080/*</a></li>
+<li>Ignore the 404 error and click on the link you will find on that page</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <strong>entando-ux-package</strong> (see
+<a class="reference external" href="https://github.com/entando/entando-ux-packages">*https://github.com/entando/entando-ux-packages*</a>
+) is a project that provides ready-made application samples.</p>
+</div>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td><a class="reference external" href="http://maven.apache.org/download.cgi">http://maven.apache.org/download.cgi</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td><a class="reference external" href="http://ant.apache.org/bindownload.cgi">http://ant.apache.org/bindownload.cgi</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/v431/installation/installation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><h3>Navigation</h3>
+<p>
+<a href="../../about.html" title="About">About</a><br>
+<a href="../../projects.html" title="Projects">Projects</a><br>
+<a href="../../documentation.html" title="Documentation">Documentation</a><br>
+<a href="../../faq.html" title="FAQ">FAQ</a><br>
+<a href="https://twitter.com/entando" title="Twitter">Twitter</a>
+</p>
+  <h3>Current Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Environment Setup</a><ul>
+<li><a class="reference internal" href="#hardware-configuration">Hardware Configuration</a></li>
+<li><a class="reference internal" href="#software-configuration">Software Configuration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#build-from-the-source-code">Build From the Source Code</a><ul>
+<li><a class="reference internal" href="#download-the-projects">Download the projects</a></li>
+<li><a class="reference internal" href="#install-the-projects">Install the projects</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../adminconsole/adminconsole431.html" title="Entando Admin Console Overview"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../gettingStarted/getting-started.html" title="Getting Started"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Entando 4.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../documentation.html" >Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../documentationv431.html" >Documentation Version 4.3.1</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Entando Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+    </div>
+  </body>
+</html>
