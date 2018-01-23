@@ -1,9 +1,0 @@
-################
-Entando Versions
-################
-
-.. toctree::
-   :maxdepth: 1
-
-   /v431/index.rst
-   /v432/index.rst
